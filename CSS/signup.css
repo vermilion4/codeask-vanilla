@@ -5,7 +5,7 @@
 }
 
 :root {
-  --codeaskblue: #123955;
+  --codeaskblue: #002828;
   --white: #ffffff;
   --black:#212529;
   --grey:#6C757D;
@@ -15,7 +15,7 @@ main {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 
@@ -37,16 +37,21 @@ main .signup-image {
 
 }
 
+main .signup-image-brief{
+  margin-top: 20%;
+}
+
 main .signup-image .signup-image-brief{
 
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+ 
 }
 
 main .signup-image .codeask-logo{
-    margin-top: 15%;
+    
     
 }
 
@@ -85,7 +90,7 @@ main .signupform-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-top: 10%;
     
   }
 
@@ -262,7 +267,7 @@ main .signupform-wrapper .signup-form .signup-brief span{
 }
 
 /* FROM TABLET TO MOBILE */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 940px) {
   .signupform-wrapper .signup-intro{
     width: 60%;
 }
@@ -278,7 +283,7 @@ main .signupform-wrapper .codeaskform-logo-wrapper{
 }
 
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 940px) {
   main .signup-image {
     display: none;
   }

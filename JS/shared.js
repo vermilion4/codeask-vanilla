@@ -1,0 +1,5 @@
+function hamburger() {
+    let menu = document.querySelector(".mobile-nav-menu");
+
+    menu.style.display === "block" ?  menu.style.display = "none" :  menu.style.display = "block";
+  }
