@@ -41,7 +41,10 @@
 
     <link rel="stylesheet" href="/CSS/shared.css" />
 
-    <link rel="stylesheet" href="/CSS/signin.css" />
+    <link rel="stylesheet" href="../CSS/signin.css">
+
+    <!-- LINK TO FONTAWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/c7dfdd3a9c.js" crossorigin="anonymous"></script>
 
     <!-- LINK TO CSS LINK TO ROBOTO FONT -->
     <link
@@ -53,13 +56,51 @@
 
   <body>
     <main>
-  
         <!-- SIGNIN CODE HERE STARTS -->
-
+  <div class="login-body grid">
+  <!-- THE LEFT SIDE OF THE LOGIN PAGE -->
+  <div class="left-col">
+    <img class="left-appendage" src="../IMAGES/SIGNIN/Ellipse 6.png" alt="">
+    <div class="hero-text">
+      <img src="../IMAGES/SIGNIN/main logo.png" alt="codeAsk logo">
+      <p>A Q&A platform for Software Developers</p>
+    </div>
+   <img class="login-hero" src="../IMAGES/SIGNIN/login hero.png"alt="codeAsk image">
+  </div>
+  <!-- THE RIGHT SIDE AND MAIN BODY OF THE LOGIN PAGE -->
+  <div class="right-col">
+    <img class="right-logo" src="../IMAGES/SIGNIN/Logo.png" alt="codeAsk logo">
+    <img class="right-appendage" src="../IMAGES/SIGNIN/Ellipse 5.png" alt="">
+   <div class="login-text">
+    <h1>Log in to your account</h1>
+    <h3>Welcome back! Please enter your details</h3>
+   </div>
+   <form action="">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <br>
+    <label for="password">Password</label>
+    <input class="password" type="password" id="password" placeholder="Enter your password" required>
+    <i class="pwd-icon fas fa-eye-slash"></i>
+    <div class="login-options">
+     <div class="remember">
+      <input class="checkbox" type="checkbox">
+      <label class ="remember-me" for="">Remember me</label>
+     </div>
+     <span><a href="#">Forgot Password?</a></span>
+    </div>
+    <button class="cta-sign-in">Sign in</button>
+    <hr>
+    <button class="cta"><i class="fab fa-google"></i> Sign in with Google</button>
+    <button class="cta"><i class="fab fa-linkedin"></i>Sign in with LinkedIn</button>
+    <button class="cta"><i class="fab fa-github"></i>Sign in with GitHub</button>
+    <br>
+    <p>Don't have an account? <a href="#">Sign up</a></p>
+   </form>
+  </div>
+ </div>        
         <!-- SIGNIN CODE HERE ENDS -->
-     
     </main>
-
     <!-- JAVASCRIPT TAGS -->
     <script src="JS/shared.js"></script>
     <script src="JS/signin.js"></script>

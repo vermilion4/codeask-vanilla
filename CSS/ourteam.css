@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;200;400&family=Roboto:wght@100;300;400;500&display=swap');
+
+/* CSS VARIABLES */
+:root {
+ --codeAskGreen: #002828;
+ --eyeSlash: #212529;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: "Roboto", sans-serif;
+ padding: 50px 100px;
+ background-color: #E5E5E5;
+ position: relative;
+}
+
+.yellow-box {
+ height: 42.59px;
+ width: 42.42px;
+ background-color: #FDD231;
+}
+
+.green-design1 {
+ position: absolute;
+ right: 70px;
+ transform: rotate(45deg);
+}
+
+.green-design2 {
+ position: absolute;
+ left: 70px;
+ top: 900px;
+ transform: rotate(45deg);
+}
+
+.green-design3 {
+ position: absolute;
+ right: 100px;
+ bottom: 920px;
+ transform: rotate(45deg);
+ z-index: -1;
+}
+
+.green-design4 {
+ position: absolute;
+ right: 100px;
+ bottom: 450px;
+ transform: rotate(45deg);
+ z-index: -1;
+}
+
+.green-design5 {
+ position: absolute;
+ left: 100px;
+ bottom: 50px;
+ transform: rotate(45deg);
+ z-index: -1;
+}
+
+.yellow-design1 {
+ position: absolute;
+ left: 400px;
+ top: 120px;
+ transform: rotate(45deg);
+}
+
+.yellow-design2 {
+ position: absolute;
+ right: 100px;
+ top: 600px;
+ transform: rotate(45deg);
+ z-index: -1;
+}
+
+.yellow-design3 {
+ position: absolute;
+ left: 600px;
+ top: 730px;
+ transform: rotate(45deg);
+ z-index: -1;
+}
+
+.yellow-design4 {
+ position: absolute;
+ left: 430px;
+ bottom: 870px;
+ transform: rotate(45deg);
+ z-index: -1;
+}
+
+.yellow-design5 {
+ position: absolute;
+ left: 120px;
+ bottom: 520px;
+ transform: rotate(45deg);
+ z-index: -1;
+}
+
+.yellow-design6 {
+ position: absolute;
+ right: 370px;
+ bottom: 50px;
+ transform: rotate(45deg);
+ z-index: -1;
+}
+
+.green-box {
+ height: 55.17px;
+ width: 54.66px;
+ background-color: #41CAAE;
+}
+
+.header {
+ text-align: center;
+ margin-top: 50px;
+ margin-bottom: 100px;
+}
+
+.header h1 {
+ font-size: 62px;
+ font-weight: 700;
+ margin-bottom: 20px;
+ color: var(--codeAskGreen);
+}
+
+.header p {
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 1.8;
+}
+
+.about-section {
+ margin-bottom: 70px;
+}
+
+.about-section img {
+ height: 725px;
+ width: 608px;
+ border-radius: 24px;
+}
+
+.about-section .about-content h2 {
+ font-size: 40px;
+ font-weight: 700;
+ line-height: 48px;
+ letter-spacing: 0.005em;
+ color: var(--codeAskGreen);
+ margin-bottom: 30px;
+}
+
+.about-section .about-content p {
+ font-size: 24px;
+ font-weight: 400;
+ line-height: 30px;
+ color: #92929D;
+ letter-spacing: 0.005em;
+}
+
+.container .heading {
+ text-align: center;
+ margin-bottom: 50px;
+}
+
+.container .heading h1 {
+ color: var(--codeAskGreen);
+ font-size: 48px;
+ font-weight: 700;
+ line-height: 120%;
+ letter-spacing: 0.005em;
+ margin-bottom: 20px;
+}
+
+.container .heading p {
+ font-size: 16px;
+ font-weight: 300;
+ line-height: 24px;
+ color: #343A40;
+}
+
+.grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 20px;
+ max-width: 100%;
+ margin: auto;
+}
+
+.grid .team-card {
+ position: relative;
+ text-align: center;
+ min-height: 400px;
+ max-width: 350px;
+ line-height: 2;
+ overflow: hidden;
+}
+
+.team-card .overlay {
+ position: absolute;
+ bottom: 100%;
+ left: 0;
+ right: 0;
+ background-color: var(--codeAskGreen);
+ color: #fff;
+ text-align: start;
+ padding: 0 20px;
+ border-radius: 24px;
+ overflow: hidden;
+ width: 100%;
+ height: 0;
+ transition: 0.5s ease;
+}
+
+.team-card .overlay .socials a {
+ color: #fff;
+ margin-right: 15px;
+ margin-top: 50px;
+ font-size: 24px;
+}
+
+.team-card .overlay-content h3 {
+ font-size: 32px;
+ font-weight: 700;
+}
+
+.team-card .overlay-content .role {
+ font-size: 14px;
+ font-weight: 700;
+ line-height: 21px;
+}
+
+.team-card .overlay-content .hobbies {
+ font-size: 14px;
+ font-weight: 400;
+ margin-top: 40px;
+}
+
+.overlay .overlay-content {
+ margin: 200px auto;
+ transform: translateY(-50%);
+}
+
+.team-card:hover .overlay {
+ bottom: 0;
+ height: 100%;
+}
+
+.grid .image img {
+ height: 300px;
+ max-width: 350px;
+ border-radius: 24px;
+ margin-bottom: 20px;
+}
