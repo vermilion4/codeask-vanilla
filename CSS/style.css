@@ -8,7 +8,7 @@
   --codeaskblue: #002828;
   --codeaskcream: #FAF0E6;
 
-  --white: #ffffff;
+  --white: #FAFAFA;
   --black:#212529;
   --grey2:#B2B5B7;;
 }
@@ -44,6 +44,13 @@
   font-size: 20px;
   text-align: center;
   margin-bottom: 24px;
+}
+
+.hero-wrapper .hero-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-wrapper .hero-button .get-started{
@@ -82,6 +89,404 @@
   }
 
   .hero-wrapper{
-    padding: 0px 60px;
+    padding: 120px 60px;
+  }
+
+  .hero-wrapper h3{
+    font-size: 25px;
+  }
+
+  .hero-wrapper p{ 
+    font-size: 22px; 
+  }
+
+  .hero-wrapper .hero-button{
+    
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  
+  .hero-wrapper .hero-button .get-started{
+    margin-right: 0px;
+  }
+
+  .hero-wrapper .hero-button .search{
+    margin-right:0px;
   }
 }
+
+
+
+/* SECTION FEATURES */
+
+/* RECTANGULAR DESIGNS */
+.features-rect1{
+  position: absolute;
+  left: 30%;
+  top: 100px;
+  z-index: -2;
+}
+
+.features-rect2{
+  position: absolute;
+  right: -5%;
+  top: -40px;
+  z-index: -2;
+}
+
+.features-rect3{
+  position: absolute;
+  left: 0px;
+  bottom: 35%;
+  z-index: -2;
+}
+
+.features-rect4{
+  position: absolute;
+  left: 53%;
+  bottom: 0px;
+  z-index: -2;
+}
+
+.features-rect5{
+  position: absolute;
+  right: 0px;
+  bottom: 37%;
+  z-index: -2;
+}
+
+
+
+.features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 60px 100px;
+
+  position: relative;
+}
+
+.features .find-solutions,
+.features .post-questions{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.features .post-questions .brief h4,
+.features .find-solutions .brief h4{
+  font-weight: 800;
+  font-size: 32px; 
+  color: var(--codeaskblue);  
+  margin-bottom: 32px;
+}
+
+.features .post-questions  .brief div,
+.features .find-solutions  .brief div{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+
+  
+  margin-bottom: 32px;
+}
+
+.features .post-questions .brief p,
+.features .find-solutions .brief p{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #373F45;
+
+}
+
+.feature-bd{
+  font-weight: 800;
+  font-size: 20px;
+  color: #373F45;
+}
+
+
+/* MEDIA QUERY FROM DESKTOP TO TABLET FOR FEAUTURES SECTION */
+@media only screen and (max-width: 940px) {
+  .features{
+    margin: 60px 30px; 
+  }
+
+.features .post-questions .image{
+   display: none;
+}
+
+.features .find-solutions .image img{
+ width: 90%;
+ height: auto; 
+}
+
+.features .post-questions,
+.features .find-solutions{
+  flex-direction: column;
+  gap: 80px;
+}
+
+.features .post-questions .brief{
+  padding-right: 30px;
+}
+
+.features .post-questions .brief h4,
+.features .find-solutions .brief h4{
+  font-size: 20px; 
+}
+
+.features .post-questions .brief p,
+.features .find-solutions .brief p{
+  font-size: 16px; 
+}
+
+.feature-bd{ 
+  font-size: 16px;
+}
+
+.features .post-questions  .brief h4{
+ text-align: right;
+}
+
+.features .post-questions  .brief div{
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+ }
+
+
+ .features-rect1{
+  display: none;
+}
+
+/* second green */
+.features-rect2{
+  position: absolute;
+  right: -1%;
+  top: 98%;  
+}
+
+
+/* first green */
+.features-rect3{
+  position: absolute;
+  left: 0px;
+  bottom: 60%;
+}
+
+.features-rect4{
+  display: none;
+}
+/* First Yellow */
+.features-rect5{
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+
+}
+
+/* SECTION INTEGRATION */
+.integrations{
+  background-color: var(--codeaskblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+
+.integrations h3{
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+  /* color: var(--white); */
+  color: #D6D6D6;
+  padding-bottom: 50px;
+}
+
+.integrations div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 80px
+}
+
+/* MEDIA QUERY FOR TABLET?MOBILE INTEGRATE SECTION */
+@media only screen and (max-width: 940px) {
+ 
+  
+  .integrations h3{
+    font-size: 28px;
+  }
+  
+  .integrations div{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .integrations div img{
+    height: 25px;
+    width: auto;
+  }
+
+  .integrations div img:last-child{
+    height: 60px;
+    width: auto;
+  }
+}
+
+/* SECTION FEEDBACK */
+
+/* RECTANGULAR DESIGNS */
+
+.feedback-rect1{
+  position: absolute;
+ left: 80%;
+ bottom: 470px;
+}
+
+.feedback-rect2{
+  position: absolute;
+ left: 80%;
+ top: 120px;
+}
+
+.feedback-rect3{
+  position: absolute;
+ left: 10%;
+ top: 140px;
+}
+
+
+
+.feedback{
+  background-color: var(--codeaskcream);
+  padding: 132px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+
+  padding-bottom: 600px;
+}
+
+.feedback h4{
+  font-weight: 800;;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: var(--codeaskblue);
+  width: 40%;
+  margin-bottom: 80px;
+}
+
+.quotes{
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .quotes img:first-child{
+  margin-right: 200px;
+} */
+
+.mySlides {display: none;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+  z-index: 0;
+}
+
+.slideshow-container .mySlides p{
+font-weight: 300;
+font-size: 32px;
+line-height: 130%;
+text-align: center;
+letter-spacing: 0.02em;
+margin-bottom: 30px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* MEDIA QUERY FOR TABLET?MOBILE FEEDBACK SECTION */
+@media only screen and (max-width: 940px) {
+
+
+  .feedback{
+    padding: 100px 0px;
+    padding-bottom: 980px;
+
+  }
+
+  .feedback h4{
+    font-size: 28px;
+  }
+
+  .slideshow-container {
+    max-width: 70%;
+  
+  }
+
+  .slideshow-container .mySlides p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    }
+
+    .quotes{
+      width: 330px;
+    }
+
+    .quotes img{
+      width: 30px;
+    }
+}
+ 
