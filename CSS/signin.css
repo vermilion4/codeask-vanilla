@@ -166,8 +166,8 @@ form a {
 }
 
 hr {
- width: 291px;
- margin: 20px auto;
+ width: 360px;
+ margin: 20px 0px;
  color: var(--hrShade);
 }
 
