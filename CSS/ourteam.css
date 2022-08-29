@@ -189,16 +189,17 @@ main{
 .grid {
  display: grid;
  grid-template-columns: repeat(3, 1fr);
- gap: 20px;
- max-width: 100%;
- margin: auto;
+ column-gap: 50px;
+ row-gap: 20px;
+ width: fit-content;
+ padding: 10px 40px;
 }
 
 .grid .team-card {
  position: relative;
  text-align: center;
  min-height: 400px;
- max-width: 350px;
+ max-width: 300px;
  line-height: 2;
  overflow: hidden;
 }
