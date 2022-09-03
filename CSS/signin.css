@@ -35,6 +35,10 @@
  margin-top: 80px;
 }
 
+.left-col .login-hero {
+ height: 450px;
+}
+
 /* MAIN BODY OF THE LOGIN PAGE */
 .login-body {
  display: grid;
@@ -73,18 +77,22 @@
 .right-col .login-text h1 {
  font-size: 32px;
  font-weight: 500;
- margin-bottom: 30px;
+ line-height: 120%;
+ margin-bottom: 15px;
+ color: #212529;
 }
 
 .right-col .login-text h3 {
  font-size: var(--textSize);
  font-weight: 400;
+ color: #6C757D;
+ line-height: 150%;
 }
 
 /* THE LOGIN FORM */
 form {
  position: relative;
- top: 120px;
+ top: 100px;
  width: 360px;
  margin: 0 auto;
 }
@@ -103,6 +111,7 @@ form input {
  border-radius: 4px;
  outline: none;
  border: 1px solid var(--codeAskGreen);
+ background: rgba(255, 255, 255, 1e-06);
 }
 
 form input::placeholder {
@@ -157,7 +166,7 @@ form a {
  background-color: var(--codeAskGreen);
  color: var(--white);
  border-radius: 4px;
- border: none;
+ border: 1px solid #131518;
  margin-bottom: 10px;
  margin-top: 10px;
  cursor: pointer;
@@ -172,14 +181,16 @@ hr {
 }
 
 .cta {
- margin-top: 15px;
- display: block;
+ margin-top: 8px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
  width: 360px;
  padding: 7px 4px;
- outline: 1px solid var(--codeAskGreen);
  color: var(--codeAskGreen);
  border-radius: 4px;
- border: none;
+ border: 1px solid #131518;
+ background: rgba(255, 255, 255, 1e-06);
  cursor: pointer;
  font-size: var(--textSize);
 }
@@ -194,6 +205,19 @@ form p {
  color: var(--codeAskGreen);
  width: 360px;
 }
+form .back {
+ display: flex;
+ width: 80px;
+ margin-top: 50px;
+ text-align: left;
+ font-weight: 400;
+ font-size: var(--textSize);
+ color: #6C757D;
+}
+form .back i {
+ text-decoration: none !important;
+}
+
 
 .fa-google {
  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
@@ -216,31 +240,46 @@ form p {
 
  form {
   margin: 0 auto;
-  max-width: 291px;
+  /* max-width: 291px; */
+  width: 100%;
+  margin-top: 20px;
  }
 
  form input {
-  max-width: 291px;
+  width: 100%;
+  /* height: 30.32px; */
  }
 
  form .cta,
  .cta-sign-in {
-  max-width: 291px;
+  width: 100%;
+ }
+ .login-body .login-text {
+  margin-bottom: 0;
  }
 
- .login-body .login-text h3 {
-  width: 380px;
+ .login-body .login-text h1 {
+  /* width: 257px; */
+  width: 100%;
+  height: 31px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 120%;
   margin: auto;
  }
 
  .login-text h3 {
-  font-size: var(--textSize);
+  /* width: 257px; */
+  width: 100%;
+  height: 19px;
   font-weight: 400;
+  /* margin: auto; */
+  margin: 15px auto 0;
  }
 
  .pwd-icon {
   position: absolute;
-  top: 128px;
+  top: 125px;
   left: 260px;
   cursor: pointer;
   color: var(--eyeSlash);
@@ -252,9 +291,12 @@ form p {
   margin-top: 15px;
   max-width: 291px;
  }
+ hr {
+  width: 100%;
+ }
 
  form p {
-  width: 291px;
+  width: 100%;
  }
 }
 
@@ -280,9 +322,6 @@ form p {
   top: 0;
  }
 
- .right-col {
-  padding: 20px 70px;
- }
 
  .right-col .right-logo {
   position: absolute;
@@ -294,15 +333,12 @@ form p {
  }
 
  .login-body .login-text {
-  top: 130px;
-  bottom: 20px;
-  width: 375px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-bottom: 20px;
+  width: 100%;
  }
 
- form {
-  top: 130px;
+ hr {
+  width: 100%;
  }
 
 }
@@ -336,6 +372,9 @@ form p {
  }
  form p {
   width: 300px;
+ }
+ hr {
+  width: 100%;
  }
  .left-col .hero-text {
   margin-top: 110px;
