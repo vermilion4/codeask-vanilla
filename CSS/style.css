@@ -355,18 +355,24 @@
   position: absolute;
  left: 80%;
  bottom: 470px;
+ 
+ 
 }
 
 .feedback-rect2{
   position: absolute;
  left: 80%;
  top: 120px;
+
+ 
 }
 
 .feedback-rect3{
   position: absolute;
  left: 10%;
  top: 140px;
+ 
+ 
 }
 
 
@@ -392,6 +398,7 @@
   color: var(--codeaskblue);
   width: 40%;
   margin-bottom: 80px;
+  z-index: 0;
 }
 
 .quotes{

@@ -9,7 +9,7 @@
   --white: #ffffff;
   --black:#212529;
   --grey:#6C757D;
-}
+}    
 
 main {
   display: flex;
@@ -100,7 +100,7 @@ main .signupform-wrapper .signup-form label{
 
   /* INPUT BOX CSS */
   main .signupform-wrapper .signup-input{
-      display: block;
+      display: inline-block;
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
@@ -111,6 +111,27 @@ main .signupform-wrapper .signup-form label{
       border: 1px solid #CED4DA;
       border-radius: 4px;  
   }
+
+  /* PASSWORD VISIBILITY EYE */
+  .signup-form form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+
+/* ERROR MESSAGE BOX */
+.signup-form .error-message{
+  display: none;
+  width: 100%;
+  padding: 6px 12px;
+  margin-bottom: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  border: 1px solid red;
+}
 
   /* FOCUS ON INPUT BOX */
   main .signupform-wrapper .signup-input:focus{
@@ -186,7 +207,7 @@ main .signupform-wrapper .signup-form .signup-brief span a{
 
 
 
-/* FROM DESKTOP TO TABLET */
+/* FORM DESKTOP TO TABLET */
 @media only screen and (max-width: 1020px){
   .signupform-wrapper .signup-intro{
     width: 60%;
@@ -240,3 +261,5 @@ main .signupform-wrapper .codeaskform-logo-wrapper{
     display: block;
   }
 } */
+
+
