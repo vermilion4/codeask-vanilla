@@ -14,7 +14,9 @@ document.getElementById('upperIcons').style.alignItems = 'center';
 function displayIconFunction() {
  let iconFunction = document.querySelectorAll('.iconFunction');
  iconFunction.forEach(icon => {
- icon.style.display = 'flex';
+  setTimeout(() => {
+   icon.style.display = 'flex';
+  }, 200)
 });
 
 document.getElementById('upperIcons').style.alignItems = 'start';
