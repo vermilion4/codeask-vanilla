@@ -38,50 +38,47 @@ main {
 }
 
 main .signupform-wrapper{
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
     
-  }
+}
 
-  main .signupform-wrapper .codeaskform-logo-wrapper{
-    display: none;
-  }
+main .signupform-wrapper .codeaskform-logo-wrapper{
+  display: none;
+}
 
-  .signupform-wrapper .signup-intro{
-      width: 45%;
-  }
+.signupform-wrapper .signup-intro{
+  width: 45%;
+}
 
 .signupform-wrapper .signup-intro h3{
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 39px;
-    color: var(--black);
-    padding-bottom: 12px;
-    text-align: center;
-    white-space: nowrap;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: var(--black);
+  padding-bottom: 12px;
+  text-align: center;
+  white-space: nowrap;
    
 }
 
 .signupform-wrapper .signup-intro p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    color: var(--grey);
-    padding-bottom: 15px;
-    text-align: center;
-    padding-bottom: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--grey);
+  padding-bottom: 15px;
+  text-align: center;
+  padding-bottom: 50px;
     
 }
 
-
 .signupform-wrapper .signup-form{
-    width: 60%;
+  width: 60%;
 }
-
-
 
 main .signupform-wrapper .signup-form label{
     display: block;
@@ -100,17 +97,24 @@ main .signupform-wrapper .signup-form label{
 
   /* INPUT BOX CSS */
   main .signupform-wrapper .signup-input{
-      display: inline-block;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 18px;
-      color: var(--grey);
-      padding: 8px 12px;
-      margin-bottom: 12px;
-      width: 100%;
-      border: 1px solid #CED4DA;
-      border-radius: 4px;  
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--grey);
+    padding: 8px 12px;
+    width: 100%;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;  
   }
+
+  main .signupform-wrapper .form-wrapper{
+    margin-bottom: 16px;   
+}
+
+.cpwrapper{
+  display: none;
+}
 
   /* PASSWORD VISIBILITY EYE */
   .signup-form form i {
@@ -119,25 +123,11 @@ main .signupform-wrapper .signup-form label{
 }
 
 
-/* ERROR MESSAGE BOX */
-.signup-form .error-message{
-  display: none;
-  width: 100%;
-  padding: 6px 12px;
-  margin-bottom: 16px;
-  text-align: center;
-  border: none;
-  border-radius: 4px;
-  font-weight: 400;
-  font-size: 16px;
-  border: 1px solid red;
-}
-
   /* FOCUS ON INPUT BOX */
   main .signupform-wrapper .signup-input:focus{
   outline: none;
   border: 1px solid var(--codeaskblue);
-}
+} 
 
 /* HORIZONTAL BAR  */
   .hr{
@@ -160,17 +150,17 @@ main .signupform-wrapper .signup-form label{
 
 /* GET STARTED BUTTON */
 main .signupform-wrapper .signup-btn.get{
-    color: var(--white);
-    background-color: var(--codeaskblue);
-    border: 1px solid  var(--codeaskblue);
+  color: var(--white);
+  background-color: var(--codeaskblue);
+  border: 1px solid  var(--codeaskblue);
 }
   
 /* SIGNUP UP WITH GOOGLE LINKEDIN AND GITHUB BUTTON */
 main .signupform-wrapper .signup-btn.link{
-    color:  var(--codeaskblue);
-    background-color: var(--white);
-    border: 1px solid  var(--codeaskblue);  
-    display: inline-block;
+  color:  var(--codeaskblue);
+  background-color: var(--white);
+  border: 1px solid  var(--codeaskblue);  
+  display: inline-block;
 }
 
 main .signupform-wrapper .signup-btn.link .signup-link-icons{
@@ -183,12 +173,12 @@ main .signupform-wrapper .signup-btn.link .signup-link-icons{
 
 main .signupform-wrapper .signup-form .signup-brief{
 
-      color: var(--grey);
-      margin-top: 20px; 
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      text-align: center;
+  color: var(--grey);
+  margin-top: 20px; 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
 }
 
 main .signupform-wrapper .signup-form .signup-brief span a{

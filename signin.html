@@ -110,18 +110,26 @@
     <h1>Log in to your account</h1>
     <h3>Welcome back! Please enter your details</h3>
    </div>
-   <form action="">
 
+
+   <form action="">
      <!-- Sign In with Email -->
-    <label for="email">Email</label>
-    <input type="email" id="email" placeholder="Enter your email" required>
-    <br>
+     <div class="form-wrapper">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required onkeyup="validateEmail()">
+      <i class="bi"></i>
+      <div class="error-message"></div >
+     </div >
+
 
       <!-- Sign In with Password -->
-    <label for="password">Password</label>
-    <input class="password" type="password" id="password" placeholder="Enter your password" required>
-    <i class="bi bi-eye-slash" id="togglePassword"></i>
-    <div class="error-message">hi there</div >
+      <div class="form-wrapper">
+        <label for="password">Password</label>
+        <input class="password" type="password" id="password" placeholder="Enter your password" required onkeyup="validatePassword()">
+        <i class="bi bi-eye-slash" id="togglePassword"></i>
+        <i class="bi"></i>
+        <div class="error-message"></div >
+      </div >
 
     <div class="login-options">
       <div class="remember">
@@ -130,7 +138,7 @@
      </div>
      <span><a href="./forgotpassword.html">Forgot Password?</a></span>
     </div>
-    <button class="cta-sign-in" onclick="verify(); lsRememberMe();">Sign in</button>
+    <button class="cta-sign-in" onkeyup="verify(); lsRememberMe();">Sign in</button>
     <hr class="hr">
     <button class="cta"><i class="fab fa-google"></i> Sign in with Google</button>
     <button class="cta"><i class="fab fa-linkedin"></i>Sign in with LinkedIn</button>

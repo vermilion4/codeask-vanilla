@@ -108,39 +108,68 @@
 
           <section class="signup-form">
             <form action="" >
-              <label for="name">Name <span>*</span></label>
-              <input
-                class="signup-input"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                required
-              />
+              <div class="form-wrapper">
+                <label for="name">Name <span>*</span></label>
+                <input
+                  class="signup-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                  onkeyup="validateName()"
+                />
+                <i class="bi"></i>
+                <div class="error-message"></div >
+              </div>
 
-              <label for="email">Email <span>*</span></label>
-              <input
-                class="signup-input"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-              />
-<p>
-              <label for="password">Password <span>*</span></label>
-              <input
-                class="signup-input"
-                type="password"
-                id="password"
-                name="password"
-                placeholder="Password"
-                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                required
-              />
-              <i class="bi bi-eye-slash" id="togglePassword"></i>
-              <div class="error-message">hi there</div >
-           
+              <div class="form-wrapper">
+                <label for="email">Email <span>*</span></label>
+                <input
+                  class="signup-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                  onkeyup="validateEmail()"
+                />
+                <!-- <i class="bi bi-exclamation-circle"></i> -->
+                <i class="bi"></i>
+                <div class="error-message"></div >
+              </div>
+
+              <div class="form-wrapper">
+                <label for="password">Password <span>*</span></label>
+                <input
+                  class="signup-input"
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  required
+                  onkeyup="validatePassword(); showConfirmPassword();"
+                />
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                <div class="error-message"></div >
+              </div>
+
+       
+              <div class="form-wrapper  cpwrapper">
+                  <label for="password">Confirm Password <span>*</span></label>
+                  <input
+                    class="signup-input"
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    placeholder="Password"
+                    title="Must must above password"
+                    onkeyup="validateConfirmPassword()"
+                  />
+                  <i class="bi bi-eye-slash" id="toggleCPassword"></i>
+                  <div class="error-message"></div >
+               </div>
 
               <button class="signup-btn get" onclick="collectData()">Get Started</button>
               <hr class="hr" />

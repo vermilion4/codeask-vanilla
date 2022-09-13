@@ -462,3 +462,35 @@ footer .footer-wrapper ul li a {
     padding-bottom: 50px;
   }
   
+
+  /* ERROR AND SUCCESS  */
+
+  /* ERROR MESSAGE BOX */
+.signup-form .error-message{
+    display: none;
+    width: 100%;
+    padding: 4px 0px;
+    margin-bottom: 16px;
+    text-align: left;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #DC3545;
+   
+  }
+
+
+   /* SUCCESS MESSAGE BOX */
+   i.bi.bi-exclamation-circle{
+    
+    color: #DC3545;
+   }
+
+   i.bi.bi-check{
+    color: #198754;
+   }
+
+
+
+
+  
