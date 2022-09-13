@@ -1,8 +1,9 @@
 const userEmail = document.getElementById("email");
 const errorMessage = document.getElementById("error-msg");
-// const shape = document.getElementsByClassName("shape");
 const reset = document.getElementById("resetPwd");
 const message = document.getElementById("message");
+const errorIcon = document.getElementById("error-icon");
+const successIcon = document.getElementById("success-icon");
 
 let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -10,41 +11,60 @@ let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 function validateEmail() {
  if (userEmail.value === "") {
   userEmail.style.border = "1px solid #002828";
+  errorIcon.style.display = "none";
   errorMessage.style.display = "none";
+  successIcon.style.display = "none";
  }
  else if (emailRegex.test(userEmail.value)) {
-  userEmail.style.border = "3px solid #34a853";
+  userEmail.style.border = "1px solid #198754";
   errorMessage.style.display = "none";
-  // shape.style.display = "none";
+  successIcon.style.display = "block";
+  errorIcon.style.display = "none";
  } else {
-  userEmail.style.border = "3px solid #ea4335";
+  userEmail.style.border = "1px solid #DC3545";
   errorMessage.innerText = "Enter a valid Email";
   errorMessage.style.display = "block";
-  // shape.style.display = "block";
+  errorIcon.style.display = "block";
+  successIcon.style.display = "none";
  }
 }
+
 
 // FUNCTION TO 
 function sendToken(event) {
  event.preventDefault();
  localStorage.setItem("email", JSON.stringify(userEmail.value));
  // console.log(JSON.stringify(savedEmails));
- if (userEmail.value) {
-  message.style.backgroundColor = "#34a853"; //green
+ if (localStorage.getItem("email")) {
+  message.style.backgroundColor = "#198754"; //green
   message.textContent = `Reset pin sent to ${userEmail.value}`;
   setTimeout(() => {
-   window.location = "https://gmail.com"; //https://mail.google.com/mail/u/0/#inbox
-   // window.location = "resetpassword.html";
+   window.location = "resetpassword.html";
   }, 1500);
-
-  //  window.open(`mailto: ${userEmail.value}`);
+ } else {
+  message.style.backgroundColor = "#DC3545"; //red
+  message.textContent = "Email not found";
  }
- else if (userEmail.value === "") {
-  message.style.backgroundColor = "#ea4335"; //red
+
+ // if (userEmail.value) {
+ //  message.style.backgroundColor = "#198754"; //green
+ //  message.textContent = `Reset pin sent to ${userEmail.value}`;
+ //  setTimeout(() => {
+ //   window.location = "resetpassword.html";
+ //  }, 1500);
+ // }
+ if (userEmail.value === "") {
+  message.style.backgroundColor = "#DC3545"; //red
   message.textContent = "Field cannot be empty!!!";
   setTimeout(() => {
    window.location.reload();
-  }, 1500);
+  }, 1000);
+ } else if (!emailRegex.test(userEmail.value)) {
+  message.style.backgroundColor = "#DC3545"; //red
+  message.textContent = "Enter a valid Email";
+  setTimeout(() => {
+   window.location.reload();
+  }, 1000);
  }
 
 }

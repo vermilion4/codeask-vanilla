@@ -113,7 +113,17 @@ form input {
  border: 1px solid var(--codeAskGreen);
  background: rgba(255, 255, 255, 1e-06);
 }
-
+/* display: block;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+color: var(--grey);
+padding: 8px 12px;
+margin-bottom: 4px;
+width: 100%;
+border: 1px solid #ced4da;
+border-radius: 4px;
+*/
 form input::placeholder {
  font-family: "Roboto";
  font-size: var(--textSize);
@@ -174,6 +184,18 @@ form a {
  font-weight: 300;
 }
 
+/*
+display: block;
+width: 100%;
+padding: 6px 12px;
+margin-bottom: 16px;
+margin-top: 25px;
+text-align: center;
+border: none;
+border-radius: 4px;
+font-weight: 400;
+font-size: 16px;
+*/
 hr {
  width: 360px;
  margin: 20px 0px;
