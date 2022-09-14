@@ -23,12 +23,12 @@
  color: var(--white);
  text-align: center;
 }
-
+/* 
 .left-col .left-appendage {
  position: absolute;
  bottom: 0;
  left: 0;
-}
+} */
 
 .left-col .hero-text {
  margin-bottom: 50px;
@@ -51,10 +51,10 @@
 
 .right-col {
  position: relative;
- padding: 0 100px;
+ padding: 0 80px;
  overflow-x: hidden;
  max-width: 100%;
- min-height: 100vh;
+ max-height: 100vh;
 }
 
 .right-col .right-logo {
@@ -77,9 +77,11 @@
 .right-col .login-text h1 {
  font-size: 32px;
  font-weight: 500;
+
  line-height: 120%;
  margin-bottom: 15px;
  color: #212529;
+
 }
 
 .right-col .login-text h3 {
@@ -106,24 +108,19 @@ form input {
  width: 360px;
  height: 38px;
  margin-top: 10px;
- margin-bottom: 20px;
  padding: 12px 40px 12px 12px;
  border-radius: 4px;
  outline: none;
  border: 1px solid var(--codeAskGreen);
  background: rgba(255, 255, 255, 1e-06);
 }
-/* display: block;
-font-weight: 400;
-font-size: 16px;
-line-height: 18px;
-color: var(--grey);
-padding: 8px 12px;
-margin-bottom: 4px;
-width: 100%;
-border: 1px solid #ced4da;
-border-radius: 4px;
-*/
+
+
+.form-wrapper{
+  margin-bottom: 14px;
+}
+
+
 form input::placeholder {
  font-family: "Roboto";
  font-size: var(--textSize);
@@ -409,4 +406,23 @@ form .back i {
  .right-col .right-appendage {
   top: 0;
  }
+}
+
+
+ /* PASSWORD VISIBILITY EYE */
+  #togglePassword {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+/* PASSWORD VISIBILITY EYE */
+.form-wrapper i {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+div.error-message{
+  margin-top: 4px;
+  font-size: 14px;
+  color: #DC3545;
 }

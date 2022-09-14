@@ -44,7 +44,7 @@ nav{
 
  nav div ul li a {
     text-decoration: none;
-    color: var(--grey2);
+    color: rgba(0, 0, 0, 0.55);
 }
 
 
@@ -330,17 +330,15 @@ footer .footer-wrapper ul li a {
 }  
 
 .subscribe-email input{
-    padding: 6px 12px;
+    padding: 8px 12px;
     outline: 1px solid var(--white);
     border: 2px solid var(--white);
     width: 200px;
     
-    border-radius: 0px 4px 4px 0px;
-
+    border-radius: 4px 0px 0px 4px;
+   
 }
     
-
-
 .subscribe-email label{
     font-weight: 400;
     font-size: 16px;
@@ -348,7 +346,6 @@ footer .footer-wrapper ul li a {
     color: var(--white);
     padding: 6px 12px;
     margin: 1px;
-
 }
 
 
@@ -413,3 +410,87 @@ footer .footer-wrapper ul li a {
   }
 
  
+
+/* CSS CLASSES  FOR SIGNUP, LOGIN, RESET PASSWORD AND FORGOT PASSWORD PAGE*/
+
+/* Note the logo Dimensions is  171 by 64 for desktop view
+                           and  148 by 54 for mobile and tablet view */
+
+.sign-btn-filled{
+    color: var(--white);
+    background-color: var(--codeaskblue);
+    border: 1px solid var(--codeaskblue);
+  }
+  
+  
+  .sign-btn-empty{
+    color: var(--codeaskblue);
+    background-color: var(--white);
+    border: 1px solid var(--codeaskblue);
+  }
+  
+  .sign-mainhead{
+    font-weight: 500;
+      font-size: 32px;
+      line-height: 39px;
+      color: var(--black);
+      padding-bottom: 12px;
+      text-align: center;
+  }
+  
+  .sign-subhead{
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 39px;
+      color: var(--black);
+      padding-bottom: 12px;
+      text-align: center;
+  }
+  
+  .sign-mainhead-mob{
+    font-size: 23px;
+    line-height: 23px;
+  }
+  
+  .sign-subhead-mob{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--grey);
+    padding-bottom: 15px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+
+  /* ERROR AND SUCCESS  */
+
+  /* ERROR MESSAGE BOX */
+.signup-form .error-message{
+    display: none;
+    width: 100%;
+    padding: 4px 0px;
+    margin-bottom: 16px;
+    text-align: left;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #DC3545;
+   
+  }
+
+
+   /* SUCCESS MESSAGE BOX */
+   i.bi.bi-exclamation-circle{
+    
+    color: #DC3545;
+   }
+
+   i.bi.bi-check{
+    color: #198754;
+   }
+
+
+
+
+  

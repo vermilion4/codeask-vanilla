@@ -1,0 +1,82 @@
+
+.cyclic-design1{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+
+main .signup-image {
+    background-color: var(--codeaskblue);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+  
+  }
+  
+  
+  main .signup-image .signup-image-brief{
+  
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main .signup-image h3{
+      color: var(--white);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 10px 10px 40px 10px;
+      white-space: wrap;
+      text-align: center;
+  }
+  
+  
+  main .signup-image .tabletphone-image{
+    object-fit: fill;
+    width: 80%;
+  }
+  
+  /* VERY LARGE SCREEN ABOVE 1200PX */
+@media only screen and (min-width: 1200px){
+  main .signup-image .tabletphone-image{
+    object-fit: fill;
+    width: 75%;
+    height: auto;
+  }
+  
+}
+
+@media only screen and (min-width: 1300px){
+  main .signup-image .tabletphone-image{
+    object-fit: fill;
+    width: 78%;
+    height: auto;
+  }
+  
+}
+
+
+@media only screen and (min-width: 1500px){
+  main .signup-image .tabletphone-image{
+    object-fit: fill;
+    width: 80%;
+    height: auto;
+  }
+  
+}
+
+
+
+@media only screen and (max-width: 940px) {
+  main .signup-image {
+    display: none;
+  }
+
+}
