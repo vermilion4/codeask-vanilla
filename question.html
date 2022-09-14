@@ -30,7 +30,9 @@
     <meta property="twitter:url" content="https://twitter.com/CodeAsk">
     <meta property="twitter:title" content="CodeAsk">
     <meta property="twitter:description" content="Question and Answer Platform for Developers">
+
     <meta property="twitter:image" content="https://">
+
     
     <!-- Schema.org Meta Tags -->
     <meta itemprop="name" content="CodeAsk">
@@ -53,10 +55,49 @@
 
   <body>
    <header>
-
+     <h1></h1>
+    <div class="search">
+    <img src="../IMAGES/ANSWER PAGE ICONS/search-icon.png" class="search-icon" alt="">
+    <input type="search" placeholder="Search...">
+    </div>
+    <div class="notification">
+    <img src="../IMAGES/ANSWER PAGE ICONS/notification.png" alt="">
+    <img src="../IMAGES/ANSWER PAGE ICONS/Ajiboye.png" class="avatar" alt="">
+    <img src="../IMAGES/ANSWER PAGE ICONS/Status.png" class="status" alt="">
+    </div>
    </header>
 
-   <aside>
+   <aside class="left-col" id="sideBar" onmouseover="displayIconFunction()" onmouseout="hideIconFunction()">
+    <div class="upper-icons" id="upperIcons" onmouseover="displayIconFunction()" onmouseout="hideIconFunction()">
+          <div class="codeAsk-logo">
+            <a href="/index.html"><img class="outer-logo" src="../IMAGES/SIDEBAR ICONS/outer-logo.png" alt="logo"></a>
+            <a href="/index.html"><img class="inner-logo" src="../IMAGES/SIDEBAR ICONS/inner-logo.png" alt="logo"></a>
+            <h4 class="iconFunction">CodeAsk</h4>
+          </div>
+
+          <div class="icon">
+            <a href=""><img src="../IMAGES/SIDEBAR ICONS/home.png" alt=""></a>
+            <a href=""><span class="iconFunction">Dashboard</span></a>
+          </div>
+          <div class="icon">
+            <a href="/question.html"><img src="../IMAGES/SIDEBAR ICONS/hamburger.png" alt=""></a>
+            <a href=""><span class="iconFunction">Questions</span></a>
+          </div>
+          <div class="icon">
+            <a href=""><img src="../IMAGES/SIDEBAR ICONS/bubble.png" alt=""></a>
+            <a href=""><span class="iconFunction">Discussions</span></a>
+            <a href=""><span class="iconFunction number">1</span></a>
+          </div>
+          <div class="icon">
+            <a href=""><img src="../IMAGES/SIDEBAR ICONS/settings.png" alt=""></a>
+            <a href=""><span class="iconFunction">Settings</span></a>
+          </div>
+          </div>
+          <div class="lower-icon">
+          <a href=""><img src="../IMAGES/SIDEBAR ICONS/logout.png" alt=""></a>
+          <a href=""><span class="iconFunction">Log out</span></a>
+          </div>
+        </div>
 
    </aside>
      

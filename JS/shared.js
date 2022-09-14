@@ -8,6 +8,29 @@ function hamburger() {
   }
 
 
+  // JAVASCRIPT FOR SIDEBAR
+function hideIconFunction() {
+ let iconFunction = document.querySelectorAll('.iconFunction');
+ // for (let i = 0; i < iconFunction.length; i++) {
+ //  iconFunction[i].style.display = 'none';
+ // }
+ iconFunction.forEach(icon => {
+ icon.style.display = 'none';
+});
+
+document.getElementById('upperIcons').style.alignItems = 'center';
+}
+
+function displayIconFunction() {
+ let iconFunction = document.querySelectorAll('.iconFunction');
+ iconFunction.forEach(icon => {
+ icon.style.display = 'flex';
+});
+
+document.getElementById('upperIcons').style.alignItems = 'start';
+}
+
+
   
 // Animation for Shapes GSAP
 // Add this to JavaScript Page: <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -79,4 +102,5 @@ t5.to(".moveBottom", {
    ease: "power1.out",
    yPercent: 0
 })
+
 
