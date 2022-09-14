@@ -14,13 +14,13 @@
 
 body {
  font-family: "Roboto", sans-serif;
-
  background-color: #F3F3F3;
 }
 
 main{
     background-color: #F3F3F3;
     padding: 150px 100px 600px 100px;
+    min-height: 100vh;
 }
 
 .yellow-box {
@@ -189,18 +189,21 @@ main{
 .grid {
  display: grid;
  grid-template-columns: repeat(3, 1fr);
- gap: 20px;
- max-width: 100%;
+ column-gap: 20px;
+ row-gap: 20px;
+ width: fit-content;
+ padding: 10px 0;
  margin: auto;
+ max-width: 100%;
 }
 
 .grid .team-card {
  position: relative;
  text-align: center;
  min-height: 400px;
- max-width: 350px;
+ max-width: 300px;
  line-height: 2;
- overflow: hidden;
+ /* overflow: hidden; */
 }
 
 .team-card .overlay {
@@ -216,7 +219,8 @@ main{
  overflow: hidden;
  width: 100%;
  height: 0;
- transition: 0.5s ease;
+ transition: 0.25s ease-in;
+ 
 }
 
 .team-card .overlay .socials a {
@@ -255,7 +259,89 @@ main{
 
 .grid .image img {
  height: 300px;
- max-width: 350px;
+ width: 100%;
  border-radius: 24px;
  margin-bottom: 20px;
 }
+@media (max-width: 1000px) {
+    .header {
+        width: 700px;
+    }
+    main {
+            padding: 150px 70px 600px 70px;
+        }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        column-gap: 50px;
+        margin-bottom: 350px;
+    }
+}
+
+@media (max-width: 650px) {
+    main {
+        padding: 150px 50px 600px 50px;
+    }
+
+    .header {
+        text-align: left;
+        width: 100%;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 350px;
+    }
+
+    .container .heading {
+        text-align: left;
+        width: 330px;
+    }
+}
+
+@media (max-width: 400px) {
+
+main {
+    padding: 150px 50px 600px 50px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+}
+.header h1 {
+    font-size: 50px;
+}
+.container .heading {
+    text-align: left;
+    width: 100%;
+}
+.container .heading h1 {
+    font-size: 35px;
+}
+.about-section .about-content h2 {
+    font-size: 35px;
+}
+}
+
+
+/* .header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.header h1 {
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--codeAskGreen);
+}
+
+.header p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+} */
