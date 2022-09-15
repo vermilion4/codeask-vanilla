@@ -30,7 +30,9 @@
     <meta property="twitter:url" content="https://twitter.com/CodeAsk">
     <meta property="twitter:title" content="CodeAsk">
     <meta property="twitter:description" content="Question and Answer Platform for Developers">
-    <meta property="twitter:image" content="https://afrimamafarms.com/images/IMG-20220406-WA0021.jpg">
+
+    <meta property="twitter:image" content="https://">
+
     
     <!-- Schema.org Meta Tags -->
     <meta itemprop="name" content="CodeAsk">
@@ -39,7 +41,14 @@
 
     <!-- LINK TO CSS SHEET(S) -->
 
+
+    <!-- BOOTSRAP ICON LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+   
     <link rel="stylesheet" href="/CSS/shared.css" />
+
+    <link rel="stylesheet" href="/CSS/loginaside.css" />
+
 
     <link rel="stylesheet" href="/CSS/signup.css" />
 
@@ -60,11 +69,15 @@
             </svg>
               
           </div>
-          <img
-            class="codeask-logo"
-            src="/IMAGES/SIGNUP/Frame 33.png"
-            alt="CodeAsk Logo"
-          />
+
+          <a href="./index.html">
+            <img
+              class="codeask-logo"
+              src="/IMAGES/SIGNUP/Frame 33.png"
+              alt="CodeAsk Logo"
+            />
+          </a>
+
           <h3>A Q&A platform for Software Developers</h3>
           <img
             class="tabletphone-image"
@@ -100,36 +113,73 @@
           </section>
 
           <section class="signup-form">
-            <form action="">
-              <label for="name">Name <span>*</span></label>
-              <input
-                class="signup-input"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-              />
 
-              <label for="email">Email <span>*</span></label>
-              <input
-                class="signup-input"
-                type="text"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-              />
+            <form action="" >
+              <div class="form-wrapper">
+                <label for="name">Name <span>*</span></label>
+                <input
+                  class="signup-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                  onkeyup="validateName()"
+                />
+                <i class="bi"></i>
+                <div class="error-message"></div >
+              </div>
 
-              <label for="password">Password <span>*</span></label>
-              <input
-                class="signup-input"
-                type="text"
-                id="password"
-                name="password"
-                placeholder="Password"
-              />
-              
+              <div class="form-wrapper">
+                <label for="email">Email <span>*</span></label>
+                <input
+                  class="signup-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                  onkeyup="validateEmail()"
+                />
+                <!-- <i class="bi bi-exclamation-circle"></i> -->
+                <i class="bi"></i>
+                <div class="error-message"></div >
+              </div>
 
-              <button class="signup-btn get">Get Started</button>
+              <div class="form-wrapper">
+                <label for="password">Password <span>*</span></label>
+                <input
+                  class="signup-input"
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  required
+                  onkeyup="validatePassword(); showConfirmPassword();"
+                />
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                <div class="error-message"></div >
+              </div>
+
+       
+              <div class="form-wrapper  cpwrapper">
+                  <label for="password">Confirm Password <span>*</span></label>
+                  <input
+                    class="signup-input"
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    placeholder="Password"
+                    title="Must must above password"
+                    onkeyup="validateConfirmPassword()"
+                  />
+                  <i class="bi bi-eye-slash" id="toggleCPassword"></i>
+                  <div class="error-message"></div >
+               </div>
+
+              <button class="signup-btn get" onclick="collectData()">Get Started</button>
+
               <hr class="hr" />
               <button class="signup-btn link">
                 <svg
@@ -190,10 +240,12 @@
               </button>
 
               <p class="signup-brief">
-              Already have an account? <span><a href="signin.html">Log in</a> </span>
+
+              Already have an account? <span><a href="./signin.html">Log in</a> </span>
               </p>
 
-              <p class="back-button">← <a href="index.html">Back</a></p>
+              <p class="back-button">← <a href="./index.html">Back</a></p>
+
             </form>
           </section>
         </section>

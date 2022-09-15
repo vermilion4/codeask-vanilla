@@ -4,11 +4,12 @@ const reset = document.getElementById("resetPwd");
 const message = document.getElementById("message");
 const errorIcon = document.getElementById("error-icon");
 const successIcon = document.getElementById("success-icon");
-
-let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 // FUNCTION TO VALIDATE EMAIL INPUT FORM
-function validateEmail() {
+function checkEmail() {
+
+ // const userPassword = localStorage.getItem("password"); // tentative key value
  if (userEmail.value === "") {
   userEmail.style.border = "1px solid #002828";
   errorIcon.style.display = "none";
@@ -68,4 +69,6 @@ function sendToken(event) {
  }
 
 }
+
+
 
