@@ -68,42 +68,45 @@
         </div>
       </header>
 
-      <aside class="left-col" id="sideBar" onmouseover="displayIconFunction()" onmouseout="hideIconFunction()">
-          <div class="upper-icons" id="upperIcons" onmouseover="displayIconFunction()" onmouseout="hideIconFunction()">
-          <a href="./question.html"><div class="codeAsk-logo">
-            <img class="outer-logo" src="../IMAGES/SIDEBAR ICONS/outer-logo.png" alt="logo">
-            <img class="inner-logo" src="../IMAGES/SIDEBAR ICONS/inner-logo.png" alt="logo">
-            <h4 class="iconFunction">CodeAsk</h4>
-          </div></a>
-
-          <a href=""><div class="icon">
-            <img src="../IMAGES/SIDEBAR ICONS/home.png" alt="">
-            <span class="iconFunction">Dashboard</span>
-          </div></a>
-          <a href=""><div class="icon">
-            <img src="../IMAGES/SIDEBAR ICONS/hamburger.png" alt="">
-            <span class="iconFunction">Questions</span>
-          </div></a>
-          <a href=""><div class="icon">
-            <img src="../IMAGES/SIDEBAR ICONS/bubble.png" alt="">
-            <span class="iconFunction">Discussions</span>
-            <span class="iconFunction number">1</span>
-          </div></a>
-          <a href=""><div class="icon">
-            <img src="../IMAGES/SIDEBAR ICONS/settings.png" alt="">
-            <span class="iconFunction">Settings</span>
-          </div></a>
+      <aside class="left-col" id="sideBar">
+          <div class="upper-icons" id="upperIcons">
+            <!-- <a href="./question.html"><div class="codeAsk-logo"> -->
+            <div class="codeAsk-logo">
+                <a href="./question.html">
+                  <img class="outer-logo" src="../IMAGES/SIDEBAR ICONS/outer-logo.png" alt="logo">
+                  <img class="inner-logo" src="../IMAGES/SIDEBAR ICONS/inner-logo.png" alt="logo">
+                </a>
+                <h4 class="iconFunction">CodeAsk</h4>
+            </div>
+            <a href=""><div class="icon">
+              <img src="../IMAGES/SIDEBAR ICONS/home.png" alt="">
+              <span class="iconFunction">Dashboard</span>
+            </div></a>
+            <a href=""><div class="icon">
+              <img src="../IMAGES/SIDEBAR ICONS/hamburger.png" alt="">
+              <span class="iconFunction">Questions</span>
+            </div></a>
+            <a href=""><div class="icon">
+              <img src="../IMAGES/SIDEBAR ICONS/bubble.png" alt="">
+              <span class="iconFunction">Discussions</span>
+              <span class="iconFunction number">1</span>
+            </div></a>
+            <a href=""><div class="icon">
+              <img src="../IMAGES/SIDEBAR ICONS/settings.png" alt="">
+              <span class="iconFunction">Settings</span>
+            </div></a>
           </div>
-          <a href=""><div class="lower-icon">
-          <img src="../IMAGES/SIDEBAR ICONS/logout.png" alt="">
-          <span class="iconFunction">Log out</span>
-          </div></a>
-        </div>
+          <div class="lower-icon">
+            <a href="">
+              <img src="../IMAGES/SIDEBAR ICONS/logout.png" alt="">
+              <span class="iconFunction">Log out</span>
+            </a>
+          </div>
       </aside>
 
       <main>
         <!--ANSWER CODE STARTS HERE -->
-        <div class="answer-page">
+        <div class="answer-page" id="answerPage">
         <div class="left-side">
           <h1>Is there a way to get version from package.json in nodejs code?</h1>
           <div class="tags">
@@ -239,7 +242,7 @@
 
         <!-- RIGHT SIE OF THE ANSWER PAGE -->
         <div class="right-side">
-          <a href="./ourteam.html" class="btn">Ask Questions</a>
+          <a href="./question.html" class="btn">Ask Questions</a>
           <br> <br>
           <div class="top-weekly">
           <h2>Top Weekly</h2>
