@@ -1,0 +1,397 @@
+body {
+ background-color: #e5e5e5;
+ /* padding: 125px 15px 15px 120px; */
+}
+
+/* HEADER */
+header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 8px 12px;
+ height: 86px;
+ top: 0;
+ right: 0;
+ left: 114px;
+ background-color: #fff;
+ position: fixed;
+ z-index: 1;
+}
+
+header .search {
+ position: relative;
+}
+
+header input {
+ padding: 12px 10px 12px 30px;
+ width: 640px;
+ border: 0.5px solid #CED4DA;
+}
+
+.search-icon {
+ position: absolute;
+ left: 10px;
+ top: 12px;
+}
+
+.notification {
+ display: flex;
+ align-items: center;
+ position: relative;
+}
+
+.notification .avatar {
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+}
+
+.notification .status {
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+
+/* SIDEBAR */
+.left-col {
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #002828;
+ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
+ height: 100vh;
+ padding: 20px 0;
+ position: fixed;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ z-index: 10;
+ width: 114px;
+}
+
+.left-col:hover {
+ width: 190px;
+ align-items: start;
+ padding-left: 20px;
+ padding-right: 20px;
+ animation: smooth 0.5s ease-in-out;
+}
+.left-col .codeAsk-logo a {
+  display: none;
+}
+.left-col .upper-icons {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ min-height: 200px;
+}
+
+.left-col .upper-icons .codeAsk-logo {
+ position: relative;
+ display: flex;
+ align-items: center;
+}
+
+.left-col .upper-icons .codeAsk-logo h4 {
+ color: #C7D9D9;
+ margin-left: 10px;
+ display: none;
+}
+
+.left-col .upper-icons a .outer-logo {
+ width: 56px;
+ height: 56px;
+}
+
+.left-col .upper-icons a .inner-logo {
+ position: absolute;
+ top: 15px;
+ left: 9px;
+ width: 39px;
+ height: 27px;
+}
+
+.left-col .upper-icons a .icon {
+ display: flex;
+ align-items: center;
+ color: #C7D9D9;
+ text-decoration: none;
+}
+
+.left-col .lower-icon a {
+ display: flex;
+}
+
+.left-col .lower-icon span {
+ margin-left: 10px;
+ display: none;
+}
+
+.left-col a {
+ text-decoration: none;
+ color: #C7D9D9;
+}
+
+.left-col .upper-icons .icon span {
+ margin-left: 10px;
+ display: none;
+}
+
+.left-col .upper-icons .icon .number {
+ background-color: #C7D9D9;
+ color: #002828;
+ padding: 1px 3px;
+ border-radius: 2px;
+ font-size: 10px;
+}
+
+.left-col img {
+ width: 16px;
+ height: 16px;
+}
+
+/* MAIN BODY OF THE DASHBOARD */
+main .dash-body {
+background-color: #fff;
+border-radius: 4px;
+max-width: 100%;
+min-height: 100vh;
+padding: 10px;
+margin-top: 100px;
+margin-left: 125px;
+margin-right: 10px;
+animation: shift 0.5s ease-out;
+}
+.dash-body .user-details {
+ display: flex;
+ justify-content: space-between;
+ /* height: 150px; */
+}
+.dash-body .user-details .user {
+ display: flex;
+ width: 52%;
+}
+
+.user img {
+ height: 150px;
+ border-radius: 4px;
+}
+.user .details {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin-left: 20px;
+}
+.details h1 {
+ font-weight: 300;
+ font-size: 48px;
+ line-height: 57.6px;
+}
+.details h3 {
+ font-weight: 300;
+ font-size: 28px;
+ line-height: 33.6px;
+ color: #6C757D;
+}
+.details .icons {
+ display: flex;
+ /* justify-content: space-between; */
+ align-items: center;
+ color: #6C757D;
+ text-decoration: none;
+ margin-top: 10px;
+}
+.icons a i {
+ margin-right: 12px;
+ width: 21.76px;
+ height: 17.69px;
+ color: #6C757D;
+}
+.icons p {
+ margin-right: 12px;
+}
+.user-details .edit-btn {
+ background-color: #002828;
+ border-radius: 4px;
+ padding: 8px 16px;
+ color: #fff;
+ cursor: pointer;
+ height: 48px;
+}
+.edit-btn .fa-pencil {
+ margin-right: 10px;
+}
+
+.dashboard-mainpage {
+ display: grid;
+ grid-template-columns: 2fr 10fr;
+ margin-top: 30px;
+ gap: 20px;
+ padding-bottom: 100px;
+}
+.stats-col .stat-numbers {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border: #E6EAEA 1px solid;
+ width: 100%;
+ height: 70px;
+ padding: 7px;
+ border-radius: 4px;
+}
+.stats-col .stat-numbers p {
+ color: #ADB5BD;
+}
+.dashboard-mainpage h1 {
+ font-weight: 300;
+ font-size: 24px;
+ line-height: 24.8px;
+ margin-bottom: 10px;
+}
+.about-col p {
+ color: #6C757D;
+ font-size: 16px;
+ line-height: 24px;
+ font-weight: 400;
+}
+.stat-numbers h3 {
+ font-weight: 300;
+ font-size: 20px;
+ line-height: 24px;
+}
+.dashboard-mainpage p {
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 24px;
+}
+.dashboard-mainpage .top-post {
+ margin-top: 30px;
+}
+.dashboard-mainpage .top-post a {
+ display: block;
+ text-decoration: none;
+ color: #002828;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 24px;
+}
+.dashboard-mainpage .top-post .question-lists {
+ margin-top: 20px;
+ border: #E6EAEA 1px solid;
+}
+.dashboard-mainpage .top-post .question-lists .question-list-a, 
+.question-list-b, .question-list-c {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border: #E6EAEA 1px solid;
+ margin: -1px;
+ padding: 10px;
+}
+.dashboard-mainpage .top-post .question-lists .tags {
+ background-color: #C7D9D9;
+ padding: 4px 7px;
+ border-radius: 4px;
+ font-size: 14px;
+  line-height: 21px;
+}
+.dashboard-mainpage .pre-list {
+ display: flex;
+ justify-content: space-between;
+}
+.dashboard-mainpage .pre-list .pre-list-links a {
+ display: inline;
+ text-decoration: none;
+ margin-left: 15px;
+ color: #000;
+}
+.dashboard-mainpage .pre-list .pre-list-links a:first-child {
+ background-color: #E6EAEA;
+ padding: 8px 16px;
+ border-radius: 4px;
+}
+
+@media (max-width: 400px) {
+  .left-col {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    height: 100px;
+    width: 100%;
+    flex-direction: row;
+  }
+    /* .left-col:hover {
+      width: none;
+      align-items: none;
+      padding-left: none;
+      padding-right: none;
+      animation: none;
+    } */
+  .left-col .upper-icons,
+  .lower-icon {
+    display: none;
+  }
+  .left-col .codeAsk-logo a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-col a .outer-logo {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .left-col a .inner-logo {
+    position: absolute;
+    top: 15px;
+    left: 9px;
+    width: 39px;
+    height: 27px;
+  }
+
+    main .dash-body {
+      /* position: relative; */
+      background-color: #fff;
+      border-radius: 4px;
+      max-width: 100%;
+      margin-top: 100px;
+      margin-left: 0;
+      padding: 10px;
+    }
+    .user img {
+      margin-top: 20px;
+    }
+    .dash-body .user-details .user {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+
+
+/* @keyframes smooth {
+ from {
+  width: 114px;
+ }
+
+ to {
+  width: 190px;
+ }
+} */
+
+/* @keyframes shift {
+ from {
+  margin-left: 125px;
+  width: 100%;
+ }
+
+ to {
+  margin-left: calc(125px + 76px);
+  width: calc(100% - 76px);
+ }
+} */

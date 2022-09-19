@@ -9,26 +9,37 @@ function hamburger() {
 
 
   // JAVASCRIPT FOR SIDEBAR
-function hideIconFunction() {
- let iconFunction = document.querySelectorAll('.iconFunction');
- // for (let i = 0; i < iconFunction.length; i++) {
- //  iconFunction[i].style.display = 'none';
- // }
- iconFunction.forEach(icon => {
- icon.style.display = 'none';
-});
+const iconFunction = document.querySelectorAll('.iconFunction');
+const upperIcons = document.getElementById('upperIcons');
+const sideBar = document.getElementById('sideBar');
+const mainPage = document.getElementById('mainPage');
+const dashboard = document.getElementById('dashboard-mainpage');
 
-document.getElementById('upperIcons').style.alignItems = 'center';
+sideBar.onmouseover = function() {
+  for (let i = 0; i < iconFunction.length; i++) {
+      iconFunction[i].style.display = 'block';
+  }
+  upperIcons.style.alignItems = 'start';
+  mainPage.style.width = 'calc(59% - 76px)';
+  mainPage.style.marginLeft = 'calc(120px + 76px)';
+
+  dashboard.style.width = 'calc(100% - 76px)';
+  dashboard.style.marginLeft = 'calc(125px + 76px)';
+  
 }
 
-function displayIconFunction() {
- let iconFunction = document.querySelectorAll('.iconFunction');
- iconFunction.forEach(icon => {
- icon.style.display = 'flex';
-});
+sideBar.onmouseout = function() {
+  for (let i = 0; i < iconFunction.length; i++) {
+      iconFunction[i].style.display = 'none';
+    }
+    upperIcons.style.alignItems = 'center';
+    mainPage.style.width = '59%';
+    mainPage.style.marginLeft = '120px';
 
-document.getElementById('upperIcons').style.alignItems = 'start';
+    dashboard.style.width = '100%';
+    dashboard.style.marginLeft = '125px';
 }
+
 
 
   
