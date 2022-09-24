@@ -50,7 +50,10 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet"
   />
-
+  <script src="/JS/checkAuth.js"></script>
+      <script>
+        checkAuth();
+      </script>
   </head>
 
   <body>
@@ -95,7 +98,7 @@
               <span class="iconFunction">Settings</span>
             </div></a>
           </div>
-          <div class="lower-icon">
+          <div class="lower-icon" onclick="logout()">
             <a href="">
               <img src="../IMAGES/SIDEBAR ICONS/logout.png" alt="">
               <span class="iconFunction">Log out</span>
@@ -108,8 +111,11 @@
 
         <!-- QUESTION CODE STARTS HERE -->
           <div class="question-page" id="questionPage">
-        
-        </div>
+
+
+
+
+          
 
         <div class="right-side">
           <a href="./question.html" class="btn">Ask Questions</a>
@@ -157,9 +163,9 @@
 
       </main>
 
-     
+      
    
     <script src="/JS/shared.js"></script>
     <script src="/JS/question.js"></script>
-  </body>
+     </body>
 </html>
