@@ -17,7 +17,9 @@ header {
  position: fixed;
  z-index: 1;
 }
-
+header .mobile-codeAsk-logo {
+  visibility: hidden;
+}
 header .search {
  position: relative;
 }
@@ -77,9 +79,6 @@ header input {
  padding-left: 20px;
  padding-right: 20px;
  animation: smooth 0.5s ease-in-out;
-}
-.left-col .codeAsk-logo a {
-  display: none;
 }
 .left-col .upper-icons {
  display: flex;
@@ -314,67 +313,153 @@ animation: shift 0.5s ease-out;
  border-radius: 4px;
 }
 
-@media (max-width: 400px) {
-  .left-col {
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0 20px;
-    height: 100px;
-    width: 100%;
-    flex-direction: row;
-  }
-    /* .left-col:hover {
-      width: none;
-      align-items: none;
-      padding-left: none;
-      padding-right: none;
-      animation: none;
-    } */
-  .left-col .upper-icons,
-  .lower-icon {
-    display: none;
-  }
-  .left-col .codeAsk-logo a {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .left-col a .outer-logo {
-    width: 56px;
-    height: 56px;
-  }
-  
-  .left-col a .inner-logo {
-    position: absolute;
-    top: 15px;
-    left: 9px;
-    width: 39px;
-    height: 27px;
+/* Mobile and tablet screen */
+@media screen and (max-width: 855px) {
+  body {
+    background: transparent;
   }
 
-    main .dash-body {
-      /* position: relative; */
-      background-color: #fff;
-      border-radius: 4px;
-      max-width: 100%;
-      margin-top: 100px;
-      margin-left: 0;
-      padding: 10px;
-    }
-    .user img {
-      margin-top: 20px;
-    }
-    .dash-body .user-details .user {
-      display: flex;
-      flex-direction: column;
-    }
+  header {
+    height: 55px;
+    background-color: #002828;
+    color: white;
+    left: 0;
+    width: 100%;
+  }
+  header .mobile-codeAsk-logo {
+    visibility: visible;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-codeAsk-logo .outer-logo {
+    position: relative;
+    height: 50px;
+    margin-right: 7px;
+  }
+  .mobile-codeAsk-logo .inner-logo {
+    position: absolute;
+    left: 18px;
+    top: 15px;
+  }
+  header>h1 {
+    display: block;
+    height: 45px;
+  }
+
+  header>h1>img {
+    display: block;
+    max-height: 100%;
+  }
+
+  header input {
+    display: none;
+  }
+
+  header .search {
+    display: none;
+  }
+
+  .search-icon {
+    position: static;
+  }
+
+  .notification .search-icon {
+    display: block;
+  }
+
+  .notification {
+    gap: 10px;
+  }
+
+  .left-col {
+    display: none;
+  }
+
+  main .dash-body {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .dash-body .user-details .user {
+    flex-direction: column;
+  }
+
+  .user img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .user .details {
+    margin-left: 0;
+  }
+
+  .details h1 {
+    font-size: 40px;
+  }
+
+  .dashboard-mainpage {
+    display: block;
+  }
+
+  .stats-col .stat-numbers {
+    width: 60%;
+  }
+
+  #dashboard-mainpage>div.dashboard-mainpage>div.stats-col {
+    margin: 30px 0;
+  }
+
+  .dashboard-mainpage .pre-list {
+    flex-direction: column;
+  }
+
+  .dashboard-mainpage .pre-list .pre-list-links {
+    margin: 10px 0;
+  }
+
+  .dashboard-mainpage .pre-list .pre-list-links a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .dashboard-mainpage .top-post .question-lists .question-list-a,
+  .question-list-b,
+  .question-list-c {
+    display: block;
+  }
+
+  .dashboard-mainpage .top-post a:nth-of-type(2) {
+    text-align: right;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .dash-body {
+    margin-top: 50px;
+  }
+
+  .dash-body .user-details .user {
+    width: 100%;
+  }
+
+  .user-details .edit-btn {
+    margin-top: 10px;
+  }
+
+  .dash-body .user-details {
+    display: block;
+  }
 }
 
 
 
-/* @keyframes smooth {
+@keyframes smooth {
  from {
   width: 114px;
  }
@@ -382,9 +467,9 @@ animation: shift 0.5s ease-out;
  to {
   width: 190px;
  }
-} */
+}
 
-/* @keyframes shift {
+@keyframes shift {
  from {
   margin-left: 125px;
   width: 100%;
@@ -394,4 +479,4 @@ animation: shift 0.5s ease-out;
   margin-left: calc(125px + 76px);
   width: calc(100% - 76px);
  }
-} */
+}
