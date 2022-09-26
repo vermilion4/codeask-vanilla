@@ -220,6 +220,8 @@ let collectData = function(){
             userList.push(newUser);
 
             localStorage.setItem("users", JSON.stringify(userList));
+  
+            localStorage.setItem("session", JSON.stringify(userList));
 
             window.location = "question.html";  //will check and change page
 

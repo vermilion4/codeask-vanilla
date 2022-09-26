@@ -207,7 +207,74 @@
           </form>
         </div>
       </div>
+
       <!-- SIGNIN CODE HERE ENDS -->
+
+
+      <a href="./index.html">
+        <img
+          class="codeask-logo"
+          src="/IMAGES/SIGNUP/Frame 33.png"
+          alt="CodeAsk Logo"
+        />
+      </a>
+      <h3>A Q&A platform for Software Developers</h3>
+      <img
+        class="tabletphone-image"
+        src="/IMAGES/SIGNUP/TabandPhoneImage.png"
+        alt="Tablet Phone SVG"
+      />
+    </div>
+  </section>
+
+  <!-- THE RIGHT SIDE AND MAIN BODY OF THE LOGIN PAGE -->
+  <div class="right-col">
+    <img class="right-logo" src="../IMAGES/SIGNIN/Logo.png" alt="codeAsk logo">
+    <img class="right-appendage" src="../IMAGES/SIGNIN/Ellipse 5.png" alt="">
+   <div class="login-text">
+    <h1>Log in to your account</h1>
+    <h3>Welcome back! Please enter your details</h3>
+   </div>
+
+
+   <form action="">
+     <!-- Sign In with Email -->
+     <div class="form-wrapper">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required onkeyup="validateEmail()">
+      <i class="bi"></i>
+      <div class="error-message"></div >
+     </div >
+
+
+      <!-- Sign In with Password -->
+      <div class="form-wrapper">
+        <label for="password">Password</label>
+        <input class="password" type="password" id="password" placeholder="Enter your password" required >
+        <i class="bi bi-eye-slash" id="togglePassword"></i>
+        <i class="bi"></i>
+        <div class="error-message"></div >
+      </div >
+
+    <div class="login-options">
+      <div class="remember">
+        <input type="checkbox" value="lsRememberMe" id="rememberMe" class="checkbox">
+        <label class ="remember-me" for="rememberMe">Remember me</label>
+     </div>
+     <span><a href="./forgotpassword.html">Forgot Password?</a></span>
+    </div>
+    <button class="cta-sign-in" onclick="verify(); lsRememberMe();">Sign in</button>
+    <hr class="hr">
+    <button class="cta"><i class="fab fa-google"></i> Sign in with Google</button>
+    <button class="cta"><i class="fab fa-linkedin"></i>Sign in with LinkedIn</button>
+    <button class="cta"><i class="fab fa-github"></i>Sign in with GitHub</button>
+    <br>
+    <p>Don't have an account? <a href="./signup.html">Sign up</a></p>
+   </form>
+  </div>
+ </div>        
+        <!-- SIGNIN CODE HERE ENDS -->
+
     </main>
     <!-- JAVASCRIPT TAGS -->
     <script src="JS/shared.js"></script>

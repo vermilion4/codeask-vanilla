@@ -9,7 +9,7 @@ togglePassword.addEventListener("click", function () {
     password.setAttribute("type", type);
     
     // toggle the icon
-    this.classList.toggle("bi-eye");
+    this.classList.toggle("bi-eye"); 
 });
 
 // prevent the default effect of submit
@@ -22,10 +22,6 @@ form.addEventListener('submit', function (event) {
 //COLLECT DATA
 function collectData(){
 
-    let  email =  document.getElementById('email').value;
-    let  password =  document.getElementById('password').value;
-
-
     if(localStorage.getItem("users") === null){
 
     }else{
@@ -33,12 +29,22 @@ function collectData(){
 
     for(let i = 0; i < JSON.parse(localStorage.getItem("users")).length; i++){
         
+        let  email =  document.getElementById('email').value;
+        let  password =  document.getElementById('password').value;
+        typeInput = "password";
+    
         allElements = JSON.parse(localStorage.getItem("users"));
         let userEmail = JSON.stringify(allElements[i]["email"]).slice(1,-1);
-        let userPassword = JSON.stringify(allElements[i]["password"]).slice(1,-1);    
-        
+        let userPassword = JSON.stringify(allElements[i]["password"]).slice(1,-1); 
+
+       
+    
         if(email === userEmail && password === userPassword){
-            
+            errorMessage("", typeInput);
+            inputFieldES(typeInput, true);
+
+            localStorage.setItem("session", JSON.stringify(allElements[i]));
+
             returnKey = "success";
             break;
 
@@ -48,6 +54,8 @@ function collectData(){
         }else{
 
             returnKey = "failed";
+            errorMessage("Password does not match", typeInput);
+            inputFieldES(typeInput, false);
         }
     } 
     return returnKey ;
@@ -68,8 +76,10 @@ function validateEmail(){
             allElements = JSON.parse(localStorage.getItem("users"));
             let userEmail = JSON.stringify(allElements[i]["email"]).slice(1,-1);   
             
+          
+            
             if(email === userEmail){
-
+                
                 errorMessage("", typeInput);
                 inputFieldES(typeInput, true);
                 return false;
@@ -77,40 +87,39 @@ function validateEmail(){
             }else{
                 errorMessage("Email does not match", typeInput);
                 inputFieldES(typeInput,false);
-                return true;
+                // return true;
             }
         }
     }
 }
 
-function validatePassword(){
-    let  password =  document.getElementById('password').value;
-    const typeInput = "password";
+// function validatePassword(){
+//     let  email =  document.getElementById('email').value;
+//     let  password =  document.getElementById('password').value;
+//     const typeInput = "password";
 
-  if(localStorage.getItem("users") === null){
+//   if(localStorage.getItem("users") === null){
 
-  }else{
+//   }else{
 
 
-        for(let i = 0; i < JSON.parse(localStorage.getItem("users")).length; i++){
+//         allElements = JSON.parse(localStorage.getItem("users"));
+//         let userPassword = JSON.stringify(allElements[i]["password"]).slice(1,-1);   
+//         let userp  =  JSON.stringify(allElements[i]["password"]).slice(1,-1); ;
         
-            allElements = JSON.parse(localStorage.getItem("users"));
-            let userEmail = JSON.stringify(allElements[i]["email"]).slice(1,-1);
-            let userPassword = JSON.stringify(allElements[i]["password"]).slice(1,-1);    
+//         if(password === userPassword){
+//             errorMessage("", typeInput);
+//             inputFieldES(typeInput, true);
+//             return true;
+//         }else{
             
-            if( password === userPassword){
-                errorMessage("", typeInput);
-                inputFieldES(typeInput, true);
-                return true;
-            }else{
-               
-                errorMessage("Password does not match", typeInput);
-                inputFieldES(typeInput, false);
-                return false;
-            }
-        }
-    }
-}
+//             errorMessage("Password does not match", typeInput);
+//             inputFieldES(typeInput, false);
+//             // return false;
+//         }
+        
+//     }
+// }
 
   
 function errorMessage(info,element){
@@ -131,11 +140,13 @@ function errorMessage(info,element){
 
 function verify(){
     if(collectData() === "success"){
+
+
         window.location = "question.html";  //will check and change page
     }
     if(collectData() === "failed"){
 
-        // errorMessage("Incorrect login details")
+        errorMessage("Incorrect login details")
     }
 }
 
