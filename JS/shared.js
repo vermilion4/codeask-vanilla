@@ -15,30 +15,66 @@ const sideBar = document.getElementById('sideBar');
 const mainPage = document.getElementById('mainPage');
 const dashboard = document.getElementById('dashboard-mainpage');
 
-sideBar.onmouseover = function() {
+sideBar.addEventListener('mouseover', () => {
   for (let i = 0; i < iconFunction.length; i++) {
-      iconFunction[i].style.display = 'block';
+      iconFunction[i].style.display = "block";
   }
-  upperIcons.style.alignItems = 'start';
-  mainPage.style.width = 'calc(59% - 76px)';
-  mainPage.style.marginLeft = 'calc(120px + 76px)';
+  upperIcons.style.alignItems = "start";
+  // answerPage.style.width = "calc(59% - 76px)";
+  // answerPage.style.marginLeft = "calc(120px + 76px)";
 
-  dashboard.style.width = 'calc(100% - 76px)';
-  dashboard.style.marginLeft = 'calc(125px + 76px)';
+  dashboard.style.width = "calc(100% - 76px)";
+  dashboard.style.marginLeft = "calc(125px + 76px)";
+})
+
+sideBar.addEventListener('mouseout', () => {
+for (let i = 0; i < iconFunction.length; i++) {
+    iconFunction[i].style.display = "none";
+  }
+  upperIcons.style.alignItems = "center";
+  // answerPage.style.width = "59%";
+  // answerPage.style.marginLeft = "120px";
+})
+
+let asidedis = document.querySelector(".left-col");
+let ansPage = document.querySelector(".answer-page");
+
+asidedis.addEventListener('mouseover', () => {
+  ansPage.style.width = "calc(59% - 76px)";
+  ansPage.style.marginLeft = "calc(120px + 76px)";
+    // ansPage.style.width= "86%";
+});
+
+asidedis.addEventListener('mouseout', () => {
+  ansPage.style.width = "59%";
+  ansPage.style.marginLeft = "120px";
+    // ansPage.style.width= "100%";
+});
+
+// sideBar.onmouseover = function() {
+//   for (let i = 0; i < iconFunction.length; i++) {
+//       iconFunction[i].style.display = "block";
+//   }
+//   upperIcons.style.alignItems = 'start';
+//   mainPage.style.width = 'calc(59% - 76px)';
+//   mainPage.style.marginLeft = 'calc(120px + 76px)';
+
+//   dashboard.style.width = 'calc(100% - 76px)';
+//   dashboard.style.marginLeft = 'calc(125px + 76px)';
   
-}
+// }
 
-sideBar.onmouseout = function() {
-  for (let i = 0; i < iconFunction.length; i++) {
-      iconFunction[i].style.display = 'none';
-    }
-    upperIcons.style.alignItems = 'center';
-    mainPage.style.width = '59%';
-    mainPage.style.marginLeft = '120px';
+// sideBar.onmouseout = function() {
+//   for (let i = 0; i < iconFunction.length; i++) {
+//       iconFunction[i].style.display = 'none';
+//     }
+//     upperIcons.style.alignItems = 'center';
+//     mainPage.style.width = '59%';
+//     mainPage.style.marginLeft = '120px';
 
-    dashboard.style.width = '100%';
-    dashboard.style.marginLeft = '125px';
-}
+//     dashboard.style.width = '100%';
+//     dashboard.style.marginLeft = '125px';
+// }
 
 
 
