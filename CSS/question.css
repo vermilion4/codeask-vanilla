@@ -255,7 +255,7 @@ header input {
  #modal{
 position: fixed;
 width: 1512px;
-height: 982px;
+height:100%;
 left: 0px;
 top: 0px;
 background: rgba(0, 40, 40, 0.25);
@@ -366,6 +366,8 @@ flex-direction: row;
 align-items: flex-start;
 
 }
+
+
 
 .modal-text-1 a {
 font-family: 'Roboto';
