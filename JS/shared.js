@@ -7,42 +7,6 @@ function hamburger() {
     // hamburgerStroke.classList.toggle("open");
   }
 
-
-  // JAVASCRIPT FOR SIDEBAR
-const iconFunction = document.querySelectorAll('.iconFunction');
-const upperIcons = document.getElementById('upperIcons');
-const sideBar = document.getElementById('sideBar');
-const mainPage = document.getElementById('mainPage');
-const dashboard = document.getElementById('dashboard-mainpage');
-
-sideBar.onmouseover = function() {
-  for (let i = 0; i < iconFunction.length; i++) {
-      iconFunction[i].style.display = 'block';
-  }
-  upperIcons.style.alignItems = 'start';
-  mainPage.style.width = 'calc(59% - 76px)';
-  mainPage.style.marginLeft = 'calc(120px + 76px)';
-
-  dashboard.style.width = 'calc(100% - 76px)';
-  dashboard.style.marginLeft = 'calc(125px + 76px)';
-  
-}
-
-sideBar.onmouseout = function() {
-  for (let i = 0; i < iconFunction.length; i++) {
-      iconFunction[i].style.display = 'none';
-    }
-    upperIcons.style.alignItems = 'center';
-    mainPage.style.width = '59%';
-    mainPage.style.marginLeft = '120px';
-
-    dashboard.style.width = '100%';
-    dashboard.style.marginLeft = '125px';
-}
-
-
-
-  
 // Animation for Shapes GSAP
 // Add this to JavaScript Page: <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    
@@ -115,3 +79,40 @@ t5.to(".moveBottom", {
 })
 
 
+
+
+  // JAVASCRIPT FOR SIDEBAR
+const iconFunction = document.querySelectorAll('.iconFunction');
+const upperIcons = document.getElementById('upperIcons');
+const sideBar = document.getElementById('sideBar');
+const mainPage = document.getElementById('mainPage');
+const dashboard = document.getElementById('dashboard-mainpage');
+
+sideBar.onmouseover = function() {
+  for (let i = 0; i < iconFunction.length; i++) {
+      iconFunction[i].style.display = 'block';
+  }
+  upperIcons.style.alignItems = 'start';
+  mainPage.style.width = 'calc(59% - 76px)';
+  mainPage.style.marginLeft = 'calc(120px + 76px)';
+
+  dashboard.style.width = 'calc(100% - 76px)';
+  dashboard.style.marginLeft = 'calc(125px + 76px)';
+  
+}
+
+sideBar.onmouseout = function() {
+  for (let i = 0; i < iconFunction.length; i++) {
+      iconFunction[i].style.display = 'none';
+    }
+    upperIcons.style.alignItems = 'center';
+    mainPage.style.width = '59%';
+    mainPage.style.marginLeft = '120px';
+
+    dashboard.style.width = '100%';
+    dashboard.style.marginLeft = '125px';
+}
+
+
+
+  
