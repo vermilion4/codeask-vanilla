@@ -24,4 +24,4 @@ sideBar.onmouseout = function() {
     questionPage.style.marginLeft = '120px';
 }
 
-
+// CLOSE BUTTON FOR MODAL POP UP
