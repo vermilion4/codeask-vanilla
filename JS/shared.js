@@ -149,10 +149,6 @@ let t5 = gsap.timeline({ repeat: -1 });
 t5.to(".moveBottom", {
   duration: 7,
   ease: "power1.out",
-  yPercent: 80
-});
-t5.to(".moveBottom", {
-  duration: 7,
-  ease: "power1.out",
   yPercent: 0
-});
+})
+
