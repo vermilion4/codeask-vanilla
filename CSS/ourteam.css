@@ -222,7 +222,7 @@ main{
  opacity: 0;
  width: 100%;
  height: 100%;
- transition: 0.75s ease;
+ transition: 1s ease;
 }
 .team-card:hover .overlay {
     opacity: 1;
