@@ -152,3 +152,10 @@ t5.to(".moveBottom", {
   yPercent: 0
 })
 
+function logout(){
+  localStorage.removeItem("session");
+
+  setTimeout(() => {
+      window.location = "index.html";
+  }, 2000);
+}
