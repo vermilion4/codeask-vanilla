@@ -107,13 +107,14 @@ header .mobile-codeAsk-logo {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 200px;
+  min-height: 250px;
 }
 
 .left-col .upper-icons .codeAsk-logo {
   position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .left-col .upper-icons .codeAsk-logo h4 {
@@ -138,6 +139,7 @@ header .mobile-codeAsk-logo {
 .left-col .upper-icons a .icon {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #c7d9d9;
   text-decoration: none;
 }
@@ -170,8 +172,8 @@ header .mobile-codeAsk-logo {
 }
 
 .left-col img {
-  width: 16px;
-  height: 16px;
+  width: 23px;
+  height: 23px;
 }
 /* THE MAIN ANSWER PAGE */
 .answer-page {
@@ -182,7 +184,8 @@ header .mobile-codeAsk-logo {
   width: 59%;
   margin-left: 120px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
-  animation: shift 0.5s ease-out;
+  /* animation: shift 0.5s ease-out; */
+  transition: 1s;
 }
 .answer-page .find-ask-question {
  display: flex;
@@ -222,6 +225,7 @@ header .mobile-codeAsk-logo {
   position: relative;
   background-color: #fff;
   max-width: 100%;
+  top: -25px;
   /* margin-left: 70px; */
 }
 
