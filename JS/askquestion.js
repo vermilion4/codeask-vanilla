@@ -8,6 +8,17 @@ function closeModal ()
 let questionsList = JSON.parse(localStorage.getItem("question")) ? JSON.parse(localStorage.getItem("question")) : [];
 let singedInUser = JSON.parse(localStorage.getItem("session"));
 
+window.addEventListener('load', function ()
+{
+    let avatar = document.querySelector('.avatar');
+    const { name } = singedInUser;
+    // console.log(session)
+    const arrayName = name.split(" ");
+
+    avatar.setAttribute("src", `https://ui-avatars.com/api/?name=${ arrayName.join("+") }`);
+
+
+});
 function getQuestion ()
 {
     const { name } = singedInUser;
@@ -28,4 +39,3 @@ function getQuestion ()
     localStorage.setItem("question", JSON.stringify(questionsList));
     window.location = "question.html";
 }
-
