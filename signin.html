@@ -170,7 +170,7 @@
                 id="password"
                 placeholder="Enter your password"
                 required
-                onkeyup="validatePassword()"
+                onkeyup=""
               />
               <i class="bi bi-eye-slash" id="togglePassword"></i>
               <i class="bi"></i>
@@ -189,7 +189,7 @@
               </div>
               <span><a href="./forgotpassword.html">Forgot Password?</a></span>
             </div>
-            <button class="cta-sign-in" onkeyup="verify(); lsRememberMe();">
+            <button class="cta-sign-in" onclick="verify(); validatePassword(); lsRememberMe();">
               Sign in
             </button>
             <hr class="hr" />
@@ -210,7 +210,7 @@
 
       <!-- SIGNIN CODE HERE ENDS -->
 
-
+<!-- 
       <a href="./index.html">
         <img
           class="codeask-logo"
@@ -227,7 +227,7 @@
     </div>
   </section>
 
-  <!-- THE RIGHT SIDE AND MAIN BODY OF THE LOGIN PAGE -->
+ 
   <div class="right-col">
     <img class="right-logo" src="../IMAGES/SIGNIN/Logo.png" alt="codeAsk logo">
     <img class="right-appendage" src="../IMAGES/SIGNIN/Ellipse 5.png" alt="">
@@ -238,7 +238,7 @@
 
 
    <form action="">
-     <!-- Sign In with Email -->
+   
      <div class="form-wrapper">
       <label for="email">Email</label>
       <input type="email" id="email" placeholder="Enter your email" required onkeyup="validateEmail()">
@@ -247,7 +247,6 @@
      </div >
 
 
-      <!-- Sign In with Password -->
       <div class="form-wrapper">
         <label for="password">Password</label>
         <input class="password" type="password" id="password" placeholder="Enter your password" required >
@@ -272,7 +271,7 @@
     <p>Don't have an account? <a href="./signup.html">Sign up</a></p>
    </form>
   </div>
- </div>        
+ </div>         -->
         <!-- SIGNIN CODE HERE ENDS -->
 
     </main>

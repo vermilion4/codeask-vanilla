@@ -93,33 +93,33 @@ function validateEmail(){
     }
 }
 
-// function validatePassword(){
-//     let  email =  document.getElementById('email').value;
-//     let  password =  document.getElementById('password').value;
-//     const typeInput = "password";
+function validatePassword(){
+    let  email =  document.getElementById('email').value;
+    let  password =  document.getElementById('password').value;
+    const typeInput = "password";
 
-//   if(localStorage.getItem("users") === null){
+  if(localStorage.getItem("users") === null){
 
-//   }else{
+  }else{
 
 
-//         allElements = JSON.parse(localStorage.getItem("users"));
-//         let userPassword = JSON.stringify(allElements[i]["password"]).slice(1,-1);   
-//         let userp  =  JSON.stringify(allElements[i]["password"]).slice(1,-1); ;
+        allElements = JSON.parse(localStorage.getItem("users"));
+        let userPassword = JSON.stringify(allElements[i]["password"]).slice(1,-1);   
+        let userp  =  JSON.stringify(allElements[i]["password"]).slice(1,-1); ;
         
-//         if(password === userPassword){
-//             errorMessage("", typeInput);
-//             inputFieldES(typeInput, true);
-//             return true;
-//         }else{
+        if(password === userPassword){
+            errorMessage("", typeInput);
+            inputFieldES(typeInput, true);
+            return true;
+        }else{
             
-//             errorMessage("Password does not match", typeInput);
-//             inputFieldES(typeInput, false);
-//             // return false;
-//         }
+            errorMessage("Password does not match", typeInput);
+            inputFieldES(typeInput, false);
+            // return false;
+        }
         
-//     }
-// }
+    }
+}
 
   
 function errorMessage(info,element){
