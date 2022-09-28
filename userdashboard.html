@@ -80,6 +80,12 @@
         <img src="../IMAGES/ANSWER PAGE ICONS/Ajiboye.png" class="avatar" alt="">
         <img src="../IMAGES/ANSWER PAGE ICONS/Status.png" class="status" alt="">
         </div>
+
+       <!-- CODE FOR AUTHORIZATION -->
+    <script src="/JS/checkAuth.js"></script>
+    <script>
+      checkAuth();
+    </script>
       </header>
 
       <aside class="left-col" id="sideBar">
@@ -110,7 +116,7 @@
               <span class="iconFunction">Settings</span>
             </div></a>
           </div>
-          <div class="lower-icon">
+          <div class="lower-icon" onclick="logout()">
             <a href="">
               <img src="../IMAGES/SIDEBAR ICONS/logout.png" alt="">
               <span class="iconFunction">Log out</span>
