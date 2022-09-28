@@ -15,6 +15,16 @@ body {
    
 .askquestion-wrapper{
     margin: 120px 300px;
+    width: 70%;
+}
+
+@media only screen and (max-width: 900px) {
+    .askquestion-wrapper{
+        margin: 80px 150px;
+        width: 75%;
+    }
+
+
 }
 
 .askquestion-title{
@@ -205,6 +215,7 @@ body {
 .askquestion-icons{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .undoredo, 
@@ -227,4 +238,33 @@ body {
 .textsize svg{
     display: inline-block;
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 900px) {
+  
+
+    .textdecorations:nth-child(3){
+        display: none;
+    }
+
+    .textdecorations:nth-child(4){
+        display: none;
+    }
+
+    .textdecorations:nth-child(5){
+        display: none;
+    }
+
+    .textadditions{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 50px) {
+  
+.lists,
+.textadditions{
+    display: none;
+  }
 }
