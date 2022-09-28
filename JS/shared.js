@@ -149,3 +149,4 @@ duration: 7,
  ease: "power1.out",
  yPercent: 0
 })
+
