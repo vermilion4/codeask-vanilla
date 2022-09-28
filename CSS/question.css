@@ -588,16 +588,16 @@ z-index: 2;
     border-radius: 999px;
 }
 
-.question-content{
-    /* display: flex;
+/* .question-content{
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0 16px 0 0;
     gap: 16px;
     width: 637px;
     height: 63px;
-    border-right: 0.5px solid #ced4da; */
-}
+    border-right: 0.5px solid #ced4da;
+} */
 
 .question-statement{
     display: flex;
