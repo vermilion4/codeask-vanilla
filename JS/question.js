@@ -25,3 +25,42 @@ sideBar.onmouseout = function() {
 }
 
 // CLOSE BUTTON FOR MODAL POP UP
+
+
+
+let questionList = JSON.parse(localStorage.getItem("question"))  ? JSON.parse(localStorage.getItem("question")) : [];
+function display(){
+
+  if (questionList[0]!=null || questionList[0]!=undefined){
+
+  JSON.parse(localStorage.getItem("question")).forEach((element,index) => {
+
+      let node1 = 
+      `<div class="question-box">
+  
+     
+      <img src="./IMAGES/OURTEAM/Clement.png" alt="">
+  <div class="question-content">
+    <div class="question-statement">
+      <p>${element.body}</p>
+    </div>
+    <div class="question-box-tags">
+      <ul>
+        <li>${element.tags}</li>
+      </ul>
+      <p>asked 5 hours ago by <span>@${element.title}</span></p>
+    </div>
+   
+  </div>
+  </div>
+       `
+
+      let eachDisplay = document.createElement("div");
+      eachDisplay.classList.add("questions")
+      eachDisplay.innerHTML = node1;
+      let display = document.querySelector(".questions-wrapper");
+      display.appendChild(eachDisplay);        
+});
+}
+}     
+

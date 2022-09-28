@@ -71,6 +71,11 @@
       <script>
         checkAuth();
       </script> -->
+
+      <script src="/JS/question.js"></script>
+      <script>
+        display();
+      </script>
   </head>
 
   <body>
@@ -178,7 +183,37 @@
       </div>
     </aside>
 
-    <main>
+
+            <div class="question-header">
+              <a href="./question.html">Find questions</a>
+              <a href = "./askquestion.html">   <button> Ask Question</button></a>
+            </div>
+            <div class="question-content">
+              <div class="question-top-navbar">
+                <ul>
+                  <li><a href="#" class="active">Newest</a></li>
+                  <li><a href="#">Unanswered</a></li>
+                  <li><a href="#">Answered</a></li>
+                </ul>
+              </div>
+              <div class="questions-wrapper" >
+              <div class="questions">
+                <div class="question-box">
+                  <img src="./IMAGES/OURTEAM/Clement.png" alt="">
+                  <div class="question-content">
+                    <div class="question-statement">
+                      <p>Is there a way to get version from packgae.json in nodejs code?</p>
+                    </div>
+                    <div class="question-box-tags">
+                      <ul>
+                        <li>web</li>
+                        <li>vscode</li>
+                        <li>html</li>
+                      </ul>
+                      <p>asked 5 hours ago by <span>@clement</span></p>
+                    </div>
+                    <!-- <div class="question-box-aside">
+
       <!-- QUESTION CODE STARTS HERE -->
 
       <div class="question-page" id="questionPage">
@@ -213,6 +248,7 @@
                   <p>asked 5 hours ago by <span>@clement</span></p>
                 </div>
                 <!-- <div class="question-box-aside">
+
                       <p class="views">5 views</p>
                       <p class="answers">2 answers</p>
                     </div> -->
@@ -369,6 +405,7 @@
                       <p class="views">90 views</p>
                       <p class="answers">10 answers</p>
                     </div> -->
+              </div>
               </div>
             </div>
           </div>
