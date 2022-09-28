@@ -64,11 +64,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
-    <script src="/JS/checkAuth.js"></script>
-      <script>
-        checkAuth();
-      </script>
   </head>
 
   <body>
@@ -139,7 +134,7 @@
           </a>
           <h4 class="iconFunction">CodeAsk</h4>
         </div>
-        <a href=""
+        <a href="/userdashboard.html"
           ><div class="icon">
             <img src="../IMAGES/SIDEBAR ICONS/home.png" alt="" />
             <span class="iconFunction">Dashboard</span>
@@ -151,21 +146,21 @@
             <span class="iconFunction">Questions</span>
           </div></a
         >
-        <a href=""
+        <a href="/discussion.html"
           ><div class="icon">
             <img src="../IMAGES/SIDEBAR ICONS/bubble.png" alt="" />
             <span class="iconFunction">Discussions</span>
             <span class="iconFunction number">1</span>
           </div></a
         >
-        <a href=""
+        <a href="#"
           ><div class="icon">
             <img src="../IMAGES/SIDEBAR ICONS/settings.png" alt="" />
             <span class="iconFunction">Settings</span>
           </div></a
         >
       </div>
-      <div class="lower-icon">
+      <div class="lower-icon" onclick="logout()">
         <a href="">
           <img src="../IMAGES/SIDEBAR ICONS/logout.png" alt="" />
           <span class="iconFunction">Log out</span>

@@ -3,6 +3,7 @@ const iconFunction = document.querySelectorAll('.iconFunction');
 const upperIcons = document.getElementById('upperIcons');
 const sideBar = document.getElementById('sideBar');
 const questionPage = document.getElementById('questionPage');
+const questionHeader = document.getElementById('questionHeader');
 let loginModal = document.querySelector('.modal');
 const session = localStorage.getItem('session')
 
@@ -43,6 +44,8 @@ sideBar.onmouseover = function () {
   upperIcons.style.alignItems = 'start';
   questionPage.style.width = 'calc(59% - 76px)';
   questionPage.style.marginLeft = 'calc(120px + 76px)';
+  questionHeader.style.width = 'calc(59% - 76px)';
+  questionHeader.style.marginLeft = 'calc(120px + 76px)';
 
 }
 
@@ -53,6 +56,8 @@ sideBar.onmouseout = function () {
   upperIcons.style.alignItems = 'center';
   questionPage.style.width = '59%';
   questionPage.style.marginLeft = '120px';
+  questionHeader.style.width = '59%';
+  questionHeader.style.marginLeft = '120px';
 }
 
 // CLOSE BUTTON FOR MODAL POP UP
