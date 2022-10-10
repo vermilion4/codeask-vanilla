@@ -89,7 +89,7 @@
   }
 
   .hero-wrapper{
-    padding: 120px 60px;
+    padding: 120px 60px 120px 60px;
   }
 
   .hero-wrapper h3{
@@ -308,10 +308,10 @@
 
 .integrations h3{
   font-weight: 800;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 120%;
   /* color: var(--white); */
-  color: #D6D6D6;
+  color: #989A9D;
   padding-bottom: 50px;
 }
 
@@ -353,7 +353,7 @@
 
 .feedback-rect1{
   position: absolute;
- left: 80%;
+ right: 20%;
  bottom: 470px;
  
  
@@ -465,6 +465,17 @@ margin-bottom: 30px;
 }
 
 /* MEDIA QUERY FOR TABLET?MOBILE FEEDBACK SECTION */
+
+@media only screen and (max-width: 1200px) {
+  .quotes{
+    width: 610px;
+  }
+  .slideshow-container {
+    max-width: 60%; 
+  }  
+}
+ 
+
 @media only screen and (max-width: 940px) {
 
 
@@ -496,4 +507,4 @@ margin-bottom: 30px;
       width: 30px;
     }
 }
- 
+

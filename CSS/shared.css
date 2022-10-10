@@ -45,6 +45,7 @@ nav{
  nav div ul li a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.55);
+    cursor: pointer;
 }
 
 
@@ -110,7 +111,36 @@ nav .header-button .create{
      /* MOBILE NAV  */
  .mobile-nav-menu{
     display: none; 
-}
+    position: relative;
+    animation: slideOut 1s;
+    /* margin-bottom: 30px; */
+ }
+
+    .drop{
+       
+        position: relative;
+        animation: slideIn 1s;
+        display: block;
+    }
+    
+    @keyframes slideIn {
+    from { 
+        top: -80px;
+        display: none; }
+        to{ 
+            top: 0px;
+        display: block; }
+    }
+
+    @keyframes slideOut{
+        from{ 
+            top: 0px;
+        display: block; }
+        to { 
+            top: -170px;
+            display: none; }
+           
+        }
 
 
 
@@ -122,15 +152,15 @@ nav .header-button .create{
     padding-left: 18px;
     padding-right: 18px;
     padding-bottom: 20px;  /*figma file was 80px*/
-    
+
 }
 
 
 .mobile-nav-menu ul{
     list-style-type: none;
     color: var(--grey2);
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     gap: 8px;
 
     display: flex;
@@ -224,8 +254,8 @@ nav .header-button .create{
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);  
     } */
- }
-
+ 
+}
 
 
 /* FOOTER CSS */
@@ -367,6 +397,8 @@ footer .footer-wrapper ul li a {
 
     footer .footer-wrapper{
         display: grid;
+        align-items: center;
+        justify-content: space-around;
         grid-template-areas: "item1 item1"
                              "item2 item3" 
                              "item4 item5" ;
