@@ -3,8 +3,11 @@ function hamburger ()
   let menu = document.querySelector(".mobile-nav-menu");
   let hamburgerStroke = document.querySelector(".mobile-nav");
 
-  menu.style.display === "block" ? menu.style.display = "none" : menu.style.display = "block";
+  // menu.style.display === "block" ? menu.style.display = "none" : menu.style.display = "block";
+ 
+     menu.classList.toggle("drop");
 
+ 
   // hamburgerStroke.classList.toggle("open");
 }
 
@@ -57,32 +60,6 @@ asidedis.addEventListener('mouseout', () =>
   ansPage.style.marginLeft = "120px";
   // ansPage.style.width= "100%";
 });
-
-// sideBar.onmouseover = function() {
-//   for (let i = 0; i < iconFunction.length; i++) {
-//       iconFunction[i].style.display = "block";
-//   }
-//   upperIcons.style.alignItems = 'start';
-//   mainPage.style.width = 'calc(59% - 76px)';
-//   mainPage.style.marginLeft = 'calc(120px + 76px)';
-
-//   dashboard.style.width = 'calc(100% - 76px)';
-//   dashboard.style.marginLeft = 'calc(125px + 76px)';
-
-// }
-
-// sideBar.onmouseout = function() {
-//   for (let i = 0; i < iconFunction.length; i++) {
-//       iconFunction[i].style.display = 'none';
-//     }
-//     upperIcons.style.alignItems = 'center';
-//     mainPage.style.width = '59%';
-//     mainPage.style.marginLeft = '120px';
-
-//     dashboard.style.width = '100%';
-//     dashboard.style.marginLeft = '125px';
-// }
-
 
 
 

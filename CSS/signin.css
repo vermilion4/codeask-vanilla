@@ -426,3 +426,10 @@ div.error-message{
   font-size: 14px;
   color: #DC3545;
 }
+
+.back-button, .back-button a{
+  color: var(--grey);
+  margin: 20px 0px;
+  padding-bottom: 20px;
+  text-align: left;
+}
